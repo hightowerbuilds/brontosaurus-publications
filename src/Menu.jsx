@@ -54,7 +54,7 @@ function FeatureDisplay(){
                 flexWrap: 'wrap',
                 justifyContent: 'center'
             }}>
-                BOX one at a time baby
+                one at a time baby
                 <span style={{
                     height: 20,
                     width: 170,
