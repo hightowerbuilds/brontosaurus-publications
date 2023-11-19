@@ -4,7 +4,7 @@ export default function Library(){
     
     return(
         <div>
-            library
+        essays
         </div>
     )
 }

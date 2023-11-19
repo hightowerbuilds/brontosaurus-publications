@@ -3,11 +3,11 @@ import BrontoCover from './images/BrontoZineOneCover.jpg'
 
 export default function Menu(){
 
-const [ showing, setShowing ] = useState('menu')
+const [ showing, setShowing ] = useState('zines')
 const [ words, setWords ] = useState('')
 const handleClick = function (){
-    showing === 'menu' ? setShowing(<Container/>) : setShowing('menu')
-    words === '' ? setWords('menu') : setWords('')
+    showing === 'zines' ? setShowing(<Container/>) : setShowing('zines')
+    words === '' ? setWords('zines') : setWords('')
 }
 
     return(
@@ -25,10 +25,10 @@ function Container(){
     return (
         <div style={{
             height: 600,
-            width: 1220,
+            width: 1000,
             position: 'absolute',
-            top: 50, 
-            left: 155,
+            top: 200, 
+            left: 150,
             backgroundColor: '#242424',
             border: '1px beige solid'
         }}>

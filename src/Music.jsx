@@ -1,10 +1,10 @@
 
 
-export default function (){
+export default function Music(){
     
     return (
         <div>
-            comics
+            music
         </div>
     )
 }
