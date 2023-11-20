@@ -2,10 +2,9 @@ import Menu from './Menu'
 import Library from './Library'
 import Music from './Music'
 import Time from './Time'
+import DinoCity from './images/cityBronto.jpg'
 import BrontoHeader from './images/bronto-header.jpg'
 import './App.css'
-
-
 
 function App() {
 
@@ -22,34 +21,50 @@ function App() {
         backgroundColor: 'black',
         border: '1px darkgreen solid'
       }}>
-      < img src={BrontoHeader} style={{
-        display: 'flex',
-        position: 'absolute',
-     
+      < img src={BrontoHeader} />
+        <div style={{
+            height: 190,
+            width: 250,
+            color: 'darkgreen',
+            backgroundColor: 'black',
+            fontFamily: 'monospace',
+          }}> 
+          <img src={DinoCity} style={{
+            height: 140,
+            width: 230,
+            marginTop: 15,
+            marginLeft: 10
 
-       }}/>
-      
+          }} />
+           ***** | +++++ | >>>>> | ~~~~~
+           </div>
       </div>
       
     <div style={{
       height: 920,
       width: 140,
       fontFamily: 'monospace',
-      fontSize: 22,
-      color: 'beige',
+      fontSize: 16,
+      color: 'seagreen',
       borderRight: '1px black solid'
   }}>
     <div style={{
       color: 'black',
-      fontSize: 12
+      fontSize: 12,
+      
     }}>
       <p>\ | / | \ | \ | / |</p>
       <p>- - - - - - - - - -</p>
     </div>
+    <div style={{
+      marginLeft: 8
+    }}>
     <Menu />
     <Music />
     <Library />
     <Time />
+    </div>
+  
     </div>
  
     </div>
