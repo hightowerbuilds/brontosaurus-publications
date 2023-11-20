@@ -25,7 +25,7 @@ function Container(){
     return (
         <div style={{
             height: 600,
-            width: 1000,
+            width: 790,
             position: 'absolute',
             top: 200, 
             left: 150,
@@ -41,77 +41,34 @@ function FeatureDisplay(){
     return (
         <div style={{
             display: 'inline-flex',
-            
             backgroundColor: 'black'
         }}>
             <div style={{
                 margin: 10,
-                height: 170,
-                width: 200,
+                height: 570,
+                width: 370,
                 border: '1px grey solid',
                 backgroundColor: 'orangered',
                 display: 'flex',
+                
                 flexWrap: 'wrap',
+               
                 justifyContent: 'center',
                 borderRadius: 2
             }}>
-                one at a time baby
-                <span style={{
-                    height: 20,
-                    width: 170,
-                    fontSize: 18,
-                    padding: 10,
-                    margin: 2,
-                    borderRadius: 15
-                }}>imagine...
-                </span>
-                <span style={{
-                    height: 20,
-                    width: 170,
-                    fontSize: 18,
-                    padding: 10,
-                    margin: 2,
-                    borderRadius: 15
-                }}>exert...</span>
-                <button style={{
-                    height: 20,
-                    width: 140,
-                    color: 'beige'
-                }}>push the button</button>
+               first zine
             </div>
             <div style={{
                 margin: 10,
-                height: 170,
-                width: 200,
+                height: 570,
+                width: 370,
                 display: 'flex',
                 flexWrap: 'wrap',
                 border: '1px grey solid',
-                backgroundColor: 'orangered',
+                backgroundColor: '#246454',
                 justifyContent: 'center'
             }}>
-                BOX TWO
-                <span style={{
-                    height: 20,
-                    width: 170,
-                    fontSize: 18,
-                    padding: 10,
-                    margin: 2,
-                    borderRadius: 15
-                }}>display...
-                </span>
-                <span style={{
-                    height: 20,
-                    width: 170,
-                    fontSize: 18,
-                    padding: 10,
-                    margin: 2,
-                    borderRadius: 15
-                }}>grimace...</span>
-                <button style={{
-                    height: 20,
-                    width: 140,
-                    color: 'beige'
-                }}>push the button</button>
+               second zine 
             </div>
         </div>
     )

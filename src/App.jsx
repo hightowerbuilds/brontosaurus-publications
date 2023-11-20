@@ -18,7 +18,7 @@ function App() {
         position: 'absolute',
         left: 150,
         height: 190,
-        width: 1000,
+        width: 790,
         backgroundColor: 'black',
         border: '1px darkgreen solid'
       }}>
