@@ -17,14 +17,18 @@ function App() {
         display: 'flex',
         position: 'absolute',
         left: 150,
-        height: 200
+        height: 190,
+        width: 1000,
+        backgroundColor: 'black',
+        border: '1px darkgreen solid'
       }}>
       < img src={BrontoHeader} style={{
         display: 'flex',
         position: 'absolute',
-        
+     
 
        }}/>
+      
       </div>
       
     <div style={{
@@ -36,7 +40,7 @@ function App() {
       borderRight: '1px black solid'
   }}>
     <div style={{
-      color: '#241424',
+      color: 'black',
       fontSize: 12
     }}>
       <p>\ | / | \ | \ | / |</p>

@@ -29,8 +29,8 @@ function Container(){
             position: 'absolute',
             top: 200, 
             left: 150,
-            backgroundColor: '#242424',
-            border: '1px beige solid'
+            backgroundColor: 'black',
+            border: '1px darkgreen solid'
         }}>
            <FeatureDisplay/>
         </div>
@@ -42,17 +42,18 @@ function FeatureDisplay(){
         <div style={{
             display: 'inline-flex',
             
-            backgroundColor: '#242424'
+            backgroundColor: 'black'
         }}>
             <div style={{
                 margin: 10,
                 height: 170,
                 width: 200,
-                border: '2px beige solid',
+                border: '1px grey solid',
                 backgroundColor: 'orangered',
                 display: 'flex',
                 flexWrap: 'wrap',
-                justifyContent: 'center'
+                justifyContent: 'center',
+                borderRadius: 2
             }}>
                 one at a time baby
                 <span style={{
@@ -84,7 +85,7 @@ function FeatureDisplay(){
                 width: 200,
                 display: 'flex',
                 flexWrap: 'wrap',
-                border: '2px beige solid',
+                border: '1px grey solid',
                 backgroundColor: 'orangered',
                 justifyContent: 'center'
             }}>
@@ -112,75 +113,6 @@ function FeatureDisplay(){
                     color: 'beige'
                 }}>push the button</button>
             </div>
-            <div style={{
-                margin: 10,
-                height: 170,
-                width: 200,
-                display: 'flex',
-                flexWrap: 'wrap',
-                justifyContent: 'center',
-                border: '2px beige solid',
-                backgroundColor: 'orangered'
-            }}>
-                BOX THREE
-                <span style={{
-                    height: 20,
-                    width: 170,
-                    fontSize: 18,
-                    padding: 10,
-                    margin: 2,
-                    borderRadius: 15
-                }}>shine...
-                </span>
-                <span style={{
-                    height: 20,
-                    width: 170,
-                    fontSize: 18,
-                    padding: 10,
-                    margin: 2,
-                    borderRadius: 15
-                }}>sheep...</span>
-                <button style={{
-                    height: 20,
-                    width: 140,
-                    color: 'beige'
-                }}>push the button</button>
-            </div>
-            <div style={{
-                margin: 10,
-                height: 170,
-                width: 200,
-                display: 'flex',
-                flexWrap: 'wrap',
-                justifyContent: 'center',
-                border: '2px beige solid',
-                backgroundColor: 'orangered'
-            }}>
-                BOX FOUR
-                <span style={{
-                    height: 20,
-                    width: 170,
-                    fontSize: 18,
-                    padding: 10,
-                    margin: 2,
-                    borderRadius: 15
-                }}>imagine...
-                </span>
-                <span style={{
-                    height: 20,
-                    width: 170,
-                    fontSize: 18,
-                    padding: 10,
-                    margin: 2,
-                    borderRadius: 15
-                }}>exert...</span>
-                <button style={{
-                    height: 20,
-                    width: 140,
-                    color: 'beige'
-                }}>push the button</button>
-            </div>
-         
         </div>
     )
 
