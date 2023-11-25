@@ -19,7 +19,7 @@ function App() {
         height: 190,
         width: 790,
         backgroundColor: 'black',
-        border: '1px darkgreen solid'
+        border: '1px seagreen solid'
       }}>
       < img src={BrontoHeader} />
         <div style={{
