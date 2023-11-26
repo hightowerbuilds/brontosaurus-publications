@@ -3,20 +3,26 @@ import BrontoCover from './images/BrontoZineOneCover.jpg'
 import HalfCover from './images/FirstZineHalfCover.png'
 export default function Menu(){
 
-const [ showing, setShowing ] = useState('zines')
+const [ showing, setShowing ] = useState('+')
 const [ words, setWords ] = useState('')
 const handleClick = function (){
-    showing === 'zines' ? setShowing(<Container/>) : setShowing('zines')
-    words === '' ? setWords('zines') : setWords('')
+    showing === '+' ? setShowing(<Container/>) : setShowing('+')
+    words === '' ? setWords('-') : setWords('')
 }
 
     return(
-        <div onClick={handleClick}>
-           
-        {words}
-        {showing}
-
+        <div style={{
+            display: 'inline-flex'
+        }}>
+         <div onClick={handleClick}>
+           zines
+           </div>
+           <div>
+            {words}
+           {showing}
+           </div>
         </div>
+       
     )
 }
 
