@@ -5,16 +5,27 @@ import { useState } from "react"
 
 export default function Music(){
 
-    const [ open, setOpen ] = useState('bleep')
+    const [ open, setOpen ] = useState('')
 
-
+    function handleClick(){
+        open === '' ? setOpen(<MusicDisplay/>) : setOpen('')
+    }
     
     
     return (
         <>
-         <div>
+         <div onClick={handleClick}>
             music
         </div>
+            {open}
+        </>
+       
+    )
+}
+
+function MusicDisplay(){
+    return (
+        <>
         <div style={{
             display: 'flex',
             position: 'absolute',
@@ -25,45 +36,98 @@ export default function Music(){
             top: 200,
 
         }}>
-            <h3>happy looking music pages</h3>
+         
             <div style={{
                 display: 'flex',
                 position: 'absolute',
                 backgroundColor: '#243557',
                 borderRadius: 2,
-                height: 125,
-                width: 250,
+                border: '1px seagreen dotted',
+                height: 32,
+                width: 780,
                 left: 5,
-                top:  45
+                top:  5,
+                fontSize: 24,
             }}>
-                blue square
+               artist name : song name : album name : release date
             </div>
             <div style={{
                 display: 'flex',
                 position: 'absolute',
-                backgroundColor: '#263507',
+                justifyContent: 'space-between',
+                backgroundColor: 'seagreen',
                 borderRadius: 2,
-                height: 125,
+                border: '1px #243557 dotted',
+                height: 65,
                 width: 250,
-                left: 270,
-                top:  45
+                left: 5,
+                top:  42,
+                padding: 6,
+                
             }}>
-                green square
+            
+                <button style={{
+                     height: 60,
+                     width: 42,
+                     borderRadius: 10,
+                     fontSize: 32,
+                     color: 'seagreen'
+                    
+                }}>{'>'}</button>
+
+                <button style={{
+                  height: 60,
+                  width: 42,
+                  borderRadius: 10,
+                  fontSize: 22,
+                    fontWeight: 'bold',
+                    color: 'seagreen'
+                    
+                }}>{'| |'}</button>
+
+                <button style={{
+                    height: 60,
+                    width: 42,
+                    borderRadius: 10,
+                    fontSize: 32,
+                    color: 'seagreen'
+                    
+                }}>{'>>'}</button>
+
+                <button style={{
+                      height: 60,
+                      width: 42,
+                      borderRadius: 10,
+                      fontSize: 32,
+                      color: 'seagreen'
+                    
+                }}>{'<<'}</button>
+
+                <button style={{
+                    height: 60,
+                    width: 42,
+                    borderRadius: 10,
+                    fontSize: 32,
+                    color: 'seagreen'
+                    
+                }}>{'#'}</button>
             </div>
             <div style={{
                 display: 'flex',
                 position: 'absolute',
                 backgroundColor: '#200000',
                 borderRadius: 2,
-                height: 125,
-                width: 250,
-                left: 535,
-                top: 45
+                border: '1px seagreen dotted',
+                height: 78,
+                width: 510,
+                left: 275,
+                top: 42,
+
             }}>
-                maroon square
+                
             </div>
         </div>
+         
         </>
-       
     )
 }
