@@ -3,22 +3,24 @@ import BrontoCover from './images/BrontoZineOneCover.jpg'
 import HalfCover from './images/FirstZineHalfCover.png'
 export default function Menu(){
 
-const [ showing, setShowing ] = useState('+')
-const [ words, setWords ] = useState('')
+const [ showing, setShowing ] = useState('')
+const [ textShade, setTextShade ] = useState('seagreen')
 const handleClick = function (){
-    showing === '+' ? setShowing(<Container/>) : setShowing('+')
-    words === '' ? setWords('-') : setWords('')
+    showing === '' ? setShowing(<Container/>) : setShowing('')
+    textShade === 'seagreen' ? setTextShade('orange') : setTextShade('seagreen')
 }
 
     return(
         <div style={{
             display: 'inline-flex'
         }}>
-         <div onClick={handleClick}>
+         <div onClick={handleClick} style={{
+            color: textShade
+         }}>
            zines
            </div>
            <div>
-            {words}
+          
            {showing}
            </div>
         </div>
@@ -54,13 +56,14 @@ function FeatureDisplay(){
                 height: 570,
                 width: 370,
                 border: '1px grey solid',
-                backgroundColor: 'orangered',
+                backgroundColor: 'darkred',
                 justifyContent: 'center',
                 borderRadius: 2
             }}>
                 <p style={{
-                    backgroundColor: 'orangered',
+                    backgroundColor: 'darkred',
                     fontSize: 12,
+                    color: 'orangered',
                     marginTop: 10,
                    marginLeft: 30
                 }}>first zine</p>
@@ -70,9 +73,10 @@ function FeatureDisplay(){
                 margin: 10
                }} />
                 <p style={{
-                    backgroundColor: 'orangered',
+                    backgroundColor: 'darkred',
                     fontSize: 12,
-                    marginLeft: 30
+                    marginLeft: 30,
+                    color: 'orangered'
                 }}>
                 published? umm.. june 2014? 
                   <button style={{

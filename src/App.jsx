@@ -19,13 +19,13 @@ function App() {
         height: 190,
         width: 790,
         backgroundColor: 'black',
-        border: '1px seagreen solid'
+        border: '1px #21521d solid'
       }}>
       < img src={BrontoHeader} />
         <div style={{
             height: 190,
             width: 250,
-            color: 'darkgreen',
+            color: '#21521d',
             backgroundColor: 'black',
             fontFamily: 'monospace',
           }}> 
@@ -36,7 +36,10 @@ function App() {
             marginLeft: 10
 
           }} />
-           ***** | +++++ | ===== | ~~~~~
+          <p style={{
+            paddingLeft: 10,
+            backgroundColor: 'black'
+          }}>"Probably, probably," - Many</p>
            </div>
       </div>
       
