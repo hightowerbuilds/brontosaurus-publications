@@ -5,16 +5,20 @@ import { useState } from "react"
 
 export default function Music(){
 
-    const [ open, setOpen ] = useState('')
+    const [ open, setOpen ] = useState('');
+    const [ textShade, setTextShade ] = useState('seagreen')
 
     function handleClick(){
         open === '' ? setOpen(<MusicDisplay/>) : setOpen('')
+        textShade === 'seagreen' ? setTextShade('orange') : setTextShade('seagreen')
     }
     
     
     return (
         <>
-         <div onClick={handleClick}>
+         <div onClick={handleClick} style={{
+            color: textShade
+         }}>
             music
         </div>
             {open}
