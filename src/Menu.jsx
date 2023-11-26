@@ -1,5 +1,4 @@
 import { useState } from "react"
-import BrontoCover from './images/BrontoZineOneCover.jpg'
 import HalfCover from './images/FirstZineHalfCover.png'
 export default function Menu(){
 
