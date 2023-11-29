@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-export default function Library(){
+export default function Essays(){
     
 const [ open, setOpen ] = useState('')
 const [ textShade, setTextShade ] = useState('seagreen')

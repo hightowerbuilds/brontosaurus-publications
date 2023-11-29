@@ -1,5 +1,5 @@
 import Menu from './Menu'
-import Library from './Library'
+import Essays from './Essays'
 import Music from './Music'
 import Time from './Time'
 import DinoCity from './images/cityBronto.jpg'
@@ -64,7 +64,7 @@ function App() {
     }}>
     <Menu />
     <Music />
-    <Library />
+    <Essays />
     <Time />
     </div>
   
