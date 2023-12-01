@@ -1,8 +1,5 @@
 import { useState } from "react"
 
-
-
-
 export default function Music(){
 
     const [ open, setOpen ] = useState('');
@@ -23,7 +20,6 @@ export default function Music(){
         </div>
             {open}
         </>
-       
     )
 }
 
@@ -37,7 +33,7 @@ function MusicDisplay(){
             height: 720,
             width: 790,
             left: 150,
-            top: 200,
+            top: 215,
 
         }}>
          

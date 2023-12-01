@@ -6,7 +6,7 @@ export default function Essays(){
 const [ open, setOpen ] = useState('')
 const [ textShade, setTextShade ] = useState('seagreen')
 const handleClick = function() {
-    open === '' ? setOpen(<EssayView/>) : setOpen('')
+    open === '' ? setOpen(<EssayView />) : setOpen('')
     textShade === 'seagreen' ? setTextShade('orange') : setTextShade('seagreen')
     } 
 

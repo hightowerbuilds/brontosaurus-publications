@@ -34,7 +34,7 @@ function Container(){
             height: 600,
             width: 790,
             position: 'absolute',
-            top: 200, 
+            top: 215, 
             left: 150,
             backgroundColor: 'black',
             border: '1px darkgreen solid'

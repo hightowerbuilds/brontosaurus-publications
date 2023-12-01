@@ -18,14 +18,15 @@ function App() {
         left: 150,
         height: 190,
         width: 790,
+        marginTop: 12,
         backgroundColor: 'black',
-        border: '1px #21521d solid'
+        border: '1px seagreen dotted'
       }}>
       < img src={BrontoHeader} />
         <div style={{
             height: 190,
             width: 250,
-            color: '#21521d',
+            color: 'seagreen',
             backgroundColor: 'black',
             fontFamily: 'monospace',
           }}> 
@@ -44,20 +45,24 @@ function App() {
       </div>
       
     <div style={{
-      height: 920,
+      height: 960,
       width: 140,
       fontFamily: 'monospace',
       fontSize: 16,
       color: 'seagreen',
-      borderRight: '1px black solid'
+      borderRight: '1px seagreen dotted'
   }}>
     <div style={{
       color: 'black',
       fontSize: 12,
       
     }}>
-      <p>\ | / | \ | \ | / |</p>
-      <p>- - - - - - - - - -</p>
+      <p style={{
+        color: 'seagreen'
+      }}>\ | / | \ | \ | / |</p>
+      <p style={{
+        color: 'seagreen'
+      }}>- - - - - - - - - -</p>
     </div>
     <div style={{
       marginLeft: 8

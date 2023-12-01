@@ -1,29 +1,27 @@
-import { useState } from "react";
-import DropMenu from "./DropMenu";
 
+import DropMenu from "./DropMenu";
 export default function EssayView(){
 
-    // const [ dropDown, setDropDown ] = useState('')
-    // const handleDrop = function(){
-    //     dropDown === '' ? setDropDown(<HistoryMenu/>) : setDropDown('')
-    // }
 
     return(
         <div style={{
             position: 'absolute',
             left: 150,
-            top: 200,
+            top: 214,
             height: 720,
             width: 790,
             border: '1px seagreen dotted',
             backgroundColor: '#242429'
         }}>
-            <ListEssays/>
+            <ListEssays 
+            titleBarOne={'______history______'}
+            titleBarTwo={'______technology______'}
+            />
         </div>
     )
 }
 
-function ListEssays(){
+function ListEssays(props){
     return(
         <div style={{
             display: 'flex',
@@ -37,13 +35,13 @@ function ListEssays(){
              border: '1px seagreen dotted',
              backgroundColor: '#242429'
            }}>
-            ______history______
+            {props.titleBarOne}
            </div>
            <div style={{
              border: '1px seagreen dotted',
              backgroundColor: '#242429'
            }}>
-            ______technology______
+            {props.titleBarTwo}
            </div>
            <div style={{
              border: '1px seagreen dotted',
