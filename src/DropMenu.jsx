@@ -1,18 +1,26 @@
 import { useState } from "react";
 
-export default function DropMenu(){
+export default function DropMenu(props){
     return(
         <div style={{
-            height: 300,
-            width: 172,
+            height: 660,
+            width: 760,
             position: 'absolute',
             left: 10,
             top: 27,
             border: '1px black dotted',
-            borderRadius: 3
+            borderRadius: props.Radius
 
            }}>
-           history... menu goes here.
+            
+            <div style={{
+              
+            }}>
+            <a>{props.linkA}</a>
+            <a>{props.linkB}</a>
+            <a>{props.linkC}</a>
+            <a>{props.linkD}</a>
+            </div> 
            </div>
     )
 }

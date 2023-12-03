@@ -1,5 +1,8 @@
 
+import { useState } from "react";
 import DropMenu from "./DropMenu";
+import './EssayView.css';
+
 export default function EssayView(){
 
 
@@ -14,14 +17,23 @@ export default function EssayView(){
             backgroundColor: '#242429'
         }}>
             <ListEssays 
-            titleBarOne={'______history______'}
-            titleBarTwo={'______technology______'}
+         
+          
             />
         </div>
     )
 }
 
-function ListEssays(props){
+function ListEssays(){
+
+  const [ showing, setShowing ] = useState('none');
+  const [ letters, setLetters] = useState('seagreen');
+  const handleMouseOver = function(){
+    showing === 'none' ? setShowing('block') : setShowing('none')
+    letters === 'seagreen' ? setLetters('dodgerblue') : setLetters('seagreen')
+  }
+
+  const randomInt = Math.floor(Math.random() * 50)
     return(
         <div style={{
             display: 'flex',
@@ -31,17 +43,18 @@ function ListEssays(props){
             
             backgroundColor: '#242429'
         }}>
-           <div style={{
+           <div onMouseOver={handleMouseOver} className='historyTitle'  style={{
              border: '1px seagreen dotted',
-             backgroundColor: '#242429'
+             backgroundColor: '#242429',
+             color: letters
            }}>
-            {props.titleBarOne}
+          ______history______
            </div>
            <div style={{
              border: '1px seagreen dotted',
-             backgroundColor: '#242429'
+             backgroundColor: '#242429',
            }}>
-            {props.titleBarTwo}
+            ______technology______
            </div>
            <div style={{
              border: '1px seagreen dotted',
@@ -55,46 +68,24 @@ function ListEssays(props){
            }}>
             ______art______
            </div>
-          <div>
+
+
+
+
+
+          <div style={{
+            display: showing
+          }}>
            
-           <DropMenu/>
+           <DropMenu 
+           linkA=' A boop'
+           linkB=' B boop'
+           linkC=' C boop'
+           linkD =' D boop'
+           Radius={randomInt}
+               />
       
-           <div style={{
-            height: 300,
-            width: 200,
-            position: 'absolute',
-            left: 202,
-            top: 27,
-            border: '1px black dotted',
-            borderRadius: 3
-
-           }}>
-            ...technology ....component goes here.
-           </div>
-           <div style={{
-            height: 300,
-            width: 198,
-            position: 'absolute',
-            left: 422,
-            top: 27,
-            border: '1px black dotted',
-            borderRadius: 3
-
-           }}>
-             ...next component goes here.
-           </div>
-           <div style={{
-            height: 300,
-            width: 132,
-            position: 'absolute',
-            left: 638,
-            top: 27,
-            border: '1px black dotted',
-            borderRadius: 3
-
-           }}>
-            ...next component goes here.
-           </div>
+       
           </div>
         </div>
     )
