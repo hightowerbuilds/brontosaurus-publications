@@ -16,10 +16,27 @@ export default function DropMenu(props){
             <div style={{
               
             }}>
-            <a>{props.linkA}</a>
-            <a>{props.linkB}</a>
-            <a>{props.linkC}</a>
-            <a>{props.linkD}</a>
+
+            <h1>{props.Heading}</h1>
+            <div style={{
+                    display: 'flex',
+                    justifyContent: 'flex-start'
+                }}>
+                <p>
+                <h2>{props.TitleA}</h2>
+                <img src={props.IntroA} />
+                <a>{props.LinkA}</a>
+                </p>
+               
+               <p>
+                <h2></h2>
+                <a>{props.LinkB}</a>
+               </p>
+            
+            <a>{props.LinkC}</a>
+            <a>{props.LinkD}</a>
+            </div>
+           
             </div> 
            </div>
     )

@@ -1,6 +1,7 @@
 
 import { useState } from "react";
 import DropMenu from "./DropMenu";
+import Waterburger from './images/Waterburger.jpg'
 import './EssayView.css';
 
 export default function EssayView(){
@@ -25,11 +26,15 @@ export default function EssayView(){
 }
 
 function ListEssays(){
-
+  const [ showingArt, setShowingArt ] = useState('none')
+  const [ showingPhilosophy, setShowingPhilosophy ] = useState('none');
   const [ showingHistory, setShowingHistory ] = useState('none');
   const [ showingTechnology, setShowingTechnology ] = useState('none')
   const [ lettersA, setLettersA ] = useState('seagreen');
-  const [ lettersB, setLettersB ] = useState('seagreen')
+  const [ lettersB, setLettersB ] = useState('seagreen');
+  const [ lettersC, setLettersC ] = useState('seagreen');
+  const [ lettersD, setLettersD ] = useState('seagreen')
+
   const handleMouseOverA = function(){
     showingHistory === 'none' ? setShowingHistory('block') : setShowingHistory('none')
     lettersA === 'seagreen' ? setLettersA('dodgerblue') : setLettersA('seagreen')
@@ -38,8 +43,14 @@ function ListEssays(){
     showingTechnology === 'none' ? setShowingTechnology('block') : setShowingTechnology('none')
     lettersB === 'seagreen' ? setLettersB('dodgerblue') : setLettersB('seagreen')
   }
-
-
+  const handleMouseOverC = function(){
+    showingPhilosophy === 'none' ? setShowingPhilosophy('block') : setShowingPhilosophy('none')
+    lettersC === 'seagreen' ? setLettersC('dodgerblue') : setLettersC('seagreen')
+  }
+const handleMouseOverD = function(){
+    showingArt === 'none' ? setShowingArt('block') : setShowingArt('none')
+    lettersD === 'seagreen' ? setLettersD('maroon') : setLettersD('seagreen')
+}
   const randomInt = Math.floor(Math.random() * 50)
     return(
         <div style={{
@@ -47,7 +58,7 @@ function ListEssays(){
             flexWrap: 'wrap',
             justifyContent: 'space-around',
             padding: 2,
-            
+            randomInt: randomInt,
             backgroundColor: '#242429'
         }}>
            <div onMouseOver={handleMouseOverA} style={{
@@ -64,15 +75,17 @@ function ListEssays(){
            }}>
             ______technology______
            </div>
-           <div style={{
+           <div onMouseOver={handleMouseOverC} style={{
              border: '1px seagreen dotted',
-             backgroundColor: '#242429'
+             backgroundColor: '#242429',
+             color: lettersC
            }}>
             ______philosophy______
            </div>
-           <div style={{
+           <div onMouseOver={handleMouseOverD} style={{
              border: '1px seagreen dotted',
-             backgroundColor: '#242429'
+             backgroundColor: '#242429',
+             color: lettersD
            }}>
             ______art______
            </div>
@@ -83,11 +96,8 @@ function ListEssays(){
           }}>
            
            <DropMenu 
-           linkA=' A boop'
-           linkB=' B boop'
-           linkC=' C boop'
-           linkD =' D boop'
-       
+              Heading={'dark matter lightens up'}
+              IntroA={Waterburger}
             />
           </div>
           <div style={{
@@ -101,7 +111,17 @@ function ListEssays(){
        
             />
           </div>
-       
+          <div style={{
+            display: showingPhilosophy
+          }}>
+            <DropMenu />
+          </div>
+
+          <div style={{
+            display: showingArt
+          }}>
+            <DropMenu />
+          </div>
         </div>
     )
 }
