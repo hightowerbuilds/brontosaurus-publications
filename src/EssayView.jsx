@@ -2,6 +2,7 @@
 import { useState } from "react";
 import DropMenu from "./DropMenu";
 import Waterburger from './images/Waterburger.jpg'
+
 import './EssayView.css';
 
 export default function EssayView(){
@@ -49,7 +50,7 @@ function ListEssays(){
   }
 const handleMouseOverD = function(){
     showingArt === 'none' ? setShowingArt('block') : setShowingArt('none')
-    lettersD === 'seagreen' ? setLettersD('maroon') : setLettersD('seagreen')
+    lettersD === 'seagreen' ? setLettersD('dodgerblue') : setLettersD('seagreen')
 }
   const randomInt = Math.floor(Math.random() * 50)
     return(
@@ -64,21 +65,24 @@ const handleMouseOverD = function(){
            <div onMouseOver={handleMouseOverA} style={{
              border: '1px seagreen dotted',
              backgroundColor: '#242429',
-             color: lettersA
+             color: lettersA, 
+             cursor: 'grabbing'
            }}>
           ______history______
            </div>
            <div onMouseOver={handleMouseOverB} style={{
              border: '1px seagreen dotted',
              backgroundColor: '#242429',
-             color: lettersB
+             color: lettersB,
+             cursor: 'grab'
            }}>
             ______technology______
            </div>
            <div onMouseOver={handleMouseOverC} style={{
              border: '1px seagreen dotted',
              backgroundColor: '#242429',
-             color: lettersC
+             color: lettersC,
+             cursor: 'grab'
            }}>
             ______philosophy______
            </div>
