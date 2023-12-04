@@ -26,12 +26,19 @@ export default function EssayView(){
 
 function ListEssays(){
 
-  const [ showing, setShowing ] = useState('none');
-  const [ letters, setLetters] = useState('seagreen');
-  const handleMouseOver = function(){
-    showing === 'none' ? setShowing('block') : setShowing('none')
-    letters === 'seagreen' ? setLetters('dodgerblue') : setLetters('seagreen')
+  const [ showingHistory, setShowingHistory ] = useState('none');
+  const [ showingTechnology, setShowingTechnology ] = useState('none')
+  const [ lettersA, setLettersA ] = useState('seagreen');
+  const [ lettersB, setLettersB ] = useState('seagreen')
+  const handleMouseOverA = function(){
+    showingHistory === 'none' ? setShowingHistory('block') : setShowingHistory('none')
+    lettersA === 'seagreen' ? setLettersA('dodgerblue') : setLettersA('seagreen')
   }
+  const handleMouseOverB = function(){
+    showingTechnology === 'none' ? setShowingTechnology('block') : setShowingTechnology('none')
+    lettersB === 'seagreen' ? setLettersB('dodgerblue') : setLettersB('seagreen')
+  }
+
 
   const randomInt = Math.floor(Math.random() * 50)
     return(
@@ -43,16 +50,17 @@ function ListEssays(){
             
             backgroundColor: '#242429'
         }}>
-           <div onMouseOver={handleMouseOver} className='historyTitle'  style={{
+           <div onMouseOver={handleMouseOverA} style={{
              border: '1px seagreen dotted',
              backgroundColor: '#242429',
-             color: letters
+             color: lettersA
            }}>
           ______history______
            </div>
-           <div style={{
+           <div onMouseOver={handleMouseOverB} style={{
              border: '1px seagreen dotted',
              backgroundColor: '#242429',
+             color: lettersB
            }}>
             ______technology______
            </div>
@@ -69,12 +77,9 @@ function ListEssays(){
             ______art______
            </div>
 
-
-
-
-
-          <div style={{
-            display: showing
+          {/**DIVs FOR EACH CATEGORY */}
+           <div style={{
+            display: showingHistory
           }}>
            
            <DropMenu 
@@ -82,11 +87,21 @@ function ListEssays(){
            linkB=' B boop'
            linkC=' C boop'
            linkD =' D boop'
-           Radius={randomInt}
-               />
-      
        
+            />
           </div>
+          <div style={{
+            display: showingTechnology
+          }}>
+             <DropMenu 
+           linkA='tech article'
+           linkB='hmm what is that aritcle'
+           linkC='2'
+           linkD ='3'
+       
+            />
+          </div>
+       
         </div>
     )
 }
