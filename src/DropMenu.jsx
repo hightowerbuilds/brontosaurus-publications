@@ -23,9 +23,9 @@ export default function DropMenu(props){
                     justifyContent: 'flex-start'
                 }}>
                 <p>
-                <h2>{props.TitleA}</h2>
-                <img src={props.IntroA} />
-                <a>{props.LinkA}</a>
+                <a href={props.LinkA}>
+                <h2 >{props.TitleA}</h2>
+                </a>
                 </p>
                
                <p>

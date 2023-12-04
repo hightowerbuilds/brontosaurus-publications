@@ -2,8 +2,7 @@
 import { useState } from "react";
 import DropMenu from "./DropMenu";
 import Waterburger from './images/Waterburger.jpg'
-
-import './EssayView.css';
+import './EssayView.css'
 
 export default function EssayView(){
 
@@ -66,7 +65,7 @@ const handleMouseOverD = function(){
              border: '1px seagreen dotted',
              backgroundColor: '#242429',
              color: lettersA, 
-             cursor: 'grabbing'
+             cursor:'crosshair'
            }}>
           ______history______
            </div>
@@ -74,7 +73,7 @@ const handleMouseOverD = function(){
              border: '1px seagreen dotted',
              backgroundColor: '#242429',
              color: lettersB,
-             cursor: 'grab'
+             cursor: 'crosshair'
            }}>
             ______technology______
            </div>
@@ -82,14 +81,15 @@ const handleMouseOverD = function(){
              border: '1px seagreen dotted',
              backgroundColor: '#242429',
              color: lettersC,
-             cursor: 'grab'
+             cursor: 'crosshair'
            }}>
             ______philosophy______
            </div>
            <div onMouseOver={handleMouseOverD} style={{
              border: '1px seagreen dotted',
              backgroundColor: '#242429',
-             color: lettersD
+             color: lettersD,
+             cursor: 'crosshair'
            }}>
             ______art______
            </div>
@@ -100,8 +100,9 @@ const handleMouseOverD = function(){
           }}>
            
            <DropMenu 
-              Heading={'dark matter lightens up'}
-              IntroA={Waterburger}
+              Heading={'Articles Manage to Relate Jist Regarding Historical Subjects'}
+              TitleA={'the way of the burger, of the water'}
+              LinkA={'https://www.google.com'}
             />
           </div>
           <div style={{
