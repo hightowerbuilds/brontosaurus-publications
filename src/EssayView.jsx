@@ -100,21 +100,21 @@ const handleMouseOverD = function(){
           }}>
            
            <DropMenu 
-              Heading={'Articles Manage to Relate Jist Regarding Historical Subjects'}
+              Heading={'Articles Relate History and Jist'}
               TitleA={'the way of the burger, of the water'}
               LinkA={'https://www.google.com'}
+              TitleB={'this car is nas'+ ' ' + ': the story of nas driving his car in nascar' }
+              LinkB={'https://www.twitch.tv'}
+              TitleC={'ships full of chips: lessons learned from popping and not stopping and fingers saw licked raw'}
+              LinkC={'https://www.msnbc.com'}
+              TitleD={'the final front ear: body parts on the move'}
+              LinkD={'https://www.myspace.com'}
             />
           </div>
           <div style={{
             display: showingTechnology
           }}>
-             <DropMenu 
-           linkA='tech article'
-           linkB='hmm what is that aritcle'
-           linkC='2'
-           linkD ='3'
-       
-            />
+             <DropMenu />
           </div>
           <div style={{
             display: showingPhilosophy
