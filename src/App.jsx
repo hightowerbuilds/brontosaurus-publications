@@ -6,6 +6,7 @@ import DinoCity from './images/cityBronto.jpg'
 import BrontoHeader from './images/bronto-header.jpg'
 import './App.css'
 
+
 function App() {
 
   
@@ -45,7 +46,7 @@ function App() {
       </div>
       
     <div style={{
-      height: 960,
+      height: 820,
       width: 140,
       fontFamily: 'monospace',
       fontSize: 16,
@@ -71,6 +72,7 @@ function App() {
     <Music />
     <Essays />
     <Time />
+   
     </div>
   
     </div>
