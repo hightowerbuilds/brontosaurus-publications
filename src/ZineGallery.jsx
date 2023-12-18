@@ -7,11 +7,34 @@ import pageFive from './images/page 8-9.jpg'
 import pageSix from './images/page 10-11.jpg'
 import pageSeven from './images/page 12-13.jpg'
 import pageEight from './images/page 16-17.jpg'
+import pageNine from './images/page 18-19.jpg'
+import pageTen from './images/page 20-21.jpg'
+import pageEleven from './images/page 22-23.jpg'
+import pageTwelve from './images/page 24-25.jpg'
+import pageThirteen from './images/page 26-27.jpg'
+import pageFourteen from './images/StarmanCenterPage.jpg'
 
 
 export default function ZineGallery(){
 
-    const imageBank = [pageOne, pageTwo, pageThree, pageFour, pageFive, pageSix, pageSeven, pageEight]
+    const imageBank = [
+
+        pageOne, 
+        pageTwo, 
+        pageThree, 
+        pageFour, 
+        pageFive, 
+        pageSix, 
+        pageSeven, 
+        pageEight, 
+        pageNine,
+        pageTen,
+        pageEleven,
+        pageTwelve,
+        pageThirteen,
+        pageFourteen
+        
+    ]
     const [ currentImage, setCurrentImage ] = useState(0)
     const handleButton = function(){
         currentImage < imageBank.length - 1 ? setCurrentImage(currentImage + 1) : setCurrentImage(0)
