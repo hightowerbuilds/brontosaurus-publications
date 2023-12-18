@@ -37,8 +37,12 @@ export default function ZineGallery(){
 
     ]
     const [ currentImage, setCurrentImage ] = useState(0)
-    const handleButton = function(){
+    const handleNextButton = function(){
         currentImage < imageBank.length - 1 ? setCurrentImage(currentImage + 1) : setCurrentImage(0)
+    }
+
+    const handPreviousButton = function(){
+        currentImage === 0 ? setCurrentImage(imageBank.length - 1) : setCurrentImage(currentImage - 1)
     }
     
 
@@ -71,13 +75,15 @@ export default function ZineGallery(){
             top: 600
            }}> 
 
-                <button style={{
+                <button 
+                onClick={handPreviousButton}    
+                style={{
                     width: 380,
                     height: 50,
                     borderRadius: 5
                 }}> PREVIOUS</button>
                 <button 
-                onClick={handleButton}
+                onClick={handleNextButton}
                 style={{
                     width: 380,
                     height: 50,
