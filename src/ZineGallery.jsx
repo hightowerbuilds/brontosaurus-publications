@@ -13,12 +13,13 @@ import pageEleven from './images/page 22-23.jpg'
 import pageTwelve from './images/page 24-25.jpg'
 import pageThirteen from './images/page 26-27.jpg'
 import pageFourteen from './images/StarmanCenterPage.jpg'
-
+import coverZineOne from './images/BrontoZineOneCover.jpg'
 
 export default function ZineGallery(){
 
     const imageBank = [
 
+        coverZineOne,
         pageOne, 
         pageTwo, 
         pageThree, 
@@ -33,7 +34,7 @@ export default function ZineGallery(){
         pageTwelve,
         pageThirteen,
         pageFourteen
-        
+
     ]
     const [ currentImage, setCurrentImage ] = useState(0)
     const handleButton = function(){
