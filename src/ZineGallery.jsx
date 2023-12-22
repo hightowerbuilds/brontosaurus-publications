@@ -19,7 +19,7 @@ export default function ZineGallery(){
 
     const imageBank = [
 
-        coverZineOne,
+        coverZineOne, 
         pageOne, 
         pageTwo, 
         pageThree, 
@@ -80,14 +80,18 @@ export default function ZineGallery(){
                 style={{
                     width: 380,
                     height: 50,
-                    borderRadius: 5
+                    borderRadius: 5,
+                    fontFamily: 'monospace',
+                    color: 'seagreen'
                 }}> PREVIOUS</button>
                 <button 
                 onClick={handleNextButton}
                 style={{
                     width: 380,
                     height: 50,
-                    borderRadius: 5
+                    borderRadius: 5,
+                    fontFamily: 'monospace',
+                    color: 'seagreen'
                 }}> NEXT</button>
                 
             </div>

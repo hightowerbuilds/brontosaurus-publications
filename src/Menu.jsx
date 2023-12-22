@@ -65,12 +65,11 @@ function FeatureDisplay(){
                 height: 570,
                 width: 370,
                 border: '1px grey solid',
-                backgroundColor: 'darkred',
                 justifyContent: 'center',
                 borderRadius: 2
             }}>
                 <p style={{
-                    backgroundColor: 'darkred',
+                   
                     fontSize: 12,
                     color: 'orangered',
                     marginTop: 10,
@@ -82,7 +81,7 @@ function FeatureDisplay(){
                 margin: 10
                }} />
                 <p style={{
-                    backgroundColor: 'darkred',
+                   
                     fontSize: 12,
                     marginLeft: 30,
                     color: 'orangered'
@@ -117,7 +116,7 @@ function FeatureDisplay(){
                 display: 'flex',
                 flexWrap: 'wrap',
                 border: '1px grey solid',
-                backgroundColor: '#246454',
+             
                 justifyContent: 'center'
             }}>
                second zine 

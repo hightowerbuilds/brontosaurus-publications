@@ -5,6 +5,7 @@ import Time from './Time'
 import DinoCity from './images/cityBronto.jpg'
 import BrontoHeader from './images/bronto-header.jpg'
 import './App.css'
+import HeadlineArticle from './HeadlineArticle'
 
 
 function App() {
@@ -13,6 +14,15 @@ function App() {
 
   return (
     <div>
+       <p style={{
+        fontFamily: 'monospace',
+        fontSize: 12,
+        color: 'seagreen',
+        borderBottom: '.5px seagreen dotted'
+      }}> 
+      \ | / | \ | \ | / | \ | / | \ | \ | / | \ | / | \ | \ | / | \ | / | \ | \ | / | \ | / | \ | \ | / | \ | / | \ | \ | / | \ | / | \ | \ | / | \ | / | \ | \ | / | \ | / | \ | \ | / | \ | / | \ | \ | / | 
+
+      </p>
       <div style={{
         display: 'flex',
         position: 'absolute',
@@ -23,6 +33,7 @@ function App() {
         backgroundColor: 'black',
         border: '1px seagreen dotted'
       }}>
+        
       < img src={BrontoHeader} />
         <div style={{
             height: 190,
@@ -51,32 +62,37 @@ function App() {
       fontFamily: 'monospace',
       fontSize: 16,
       color: 'seagreen',
-      borderRight: '1px seagreen dotted'
+      // borderRight: '1px seagreen dotted'
   }}>
     <div style={{
       color: 'black',
       fontSize: 12,
       
     }}>
-      <p style={{
-        color: 'seagreen'
-      }}>\ | / | \ | \ | / |</p>
-      <p style={{
-        color: 'seagreen'
-      }}>- - - - - - - - - -</p>
+     
     </div>
     <div style={{
-      marginLeft: 8
+      marginLeft: 35,
+      marginTop: 20,
+      borderLeft: '3px skyblue dotted',
+      padding: 10
     }}>
+    home
     <Menu />
     <Music />
     <Essays />
     <Time />
+    
    
     </div>
   
+    <HeadlineArticle />
+    <HeadlineArticle />
+    <HeadlineArticle />
+    <HeadlineArticle />
     </div>
  
+   
     </div>
     
 
