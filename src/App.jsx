@@ -6,11 +6,10 @@ import DinoCity from './images/cityBronto.jpg'
 import BrontoHeader from './images/bronto-header.jpg'
 import './App.css'
 import HeadlineArticle from './HeadlineArticle'
+import Gibberish from './Gibberish'
 
 
 function App() {
-
-  
 
   return (
     <div>
@@ -20,7 +19,7 @@ function App() {
         color: 'seagreen',
         borderBottom: '.5px seagreen dotted'
       }}> 
-      \ | / | \ | \ | / | \ | / | \ | \ | / | \ | / | \ | \ | / | \ | / | \ | \ | / | \ | / | \ | \ | / | \ | / | \ | \ | / | \ | / | \ | \ | / | \ | / | \ | \ | / | \ | / | \ | \ | / | \ | / | \ | \ | / | 
+      | / | \ | \ | / | \ | / | \ | \ | / | \ | / | \ | \ | / | \ | / | \ | \ | / | \ | / | \ | \ | / | \ | / | \ | \ | / | \ | / | \ |  
 
       </p>
       <div style={{
@@ -86,10 +85,8 @@ function App() {
    
     </div>
   
-    <HeadlineArticle />
-    <HeadlineArticle />
-    <HeadlineArticle />
-    <HeadlineArticle />
+
+  
     </div>
  
    

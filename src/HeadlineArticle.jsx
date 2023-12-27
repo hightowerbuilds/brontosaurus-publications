@@ -1,6 +1,6 @@
 
 
-export default function HeadlineArticle(){
+export default function HeadlineArticle(props){
     return(
 
         <div style={{
@@ -10,20 +10,20 @@ export default function HeadlineArticle(){
             position: 'absolute',
             width: 790,
             left: 60,
-            top: 260,
+            top: props.Position
            }}> 
             <h2 style={{
               position: 'absolute',
-              width: 250,
+              width: 700,
               left: 150,
               
-            }}>HEADLINE</h2>
+            }}>{props.Title}</h2>
             <p style={{
               position: 'absolute',
               width: 800,
               left: 88,
               top: 35,
-            }}>article - brief introduction and other little tid bits that will embellish how very amazing these thoughts are right about here</p>
+            }}>{props.Article}</p>
            
         
            </div>
