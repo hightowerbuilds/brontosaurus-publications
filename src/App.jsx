@@ -19,8 +19,7 @@ function App() {
         color: 'seagreen',
         borderBottom: '.5px seagreen dotted'
       }}> 
-      | / | \ | \ | / | \ | / | \ | \ | / | \ | / | \ | \ | / | \ | / | \ | \ | / | \ | / | \ | \ | / | \ | / | \ | \ | / | \ | / | \ |  
-
+     
       </p>
       <div style={{
         display: 'flex',
@@ -76,7 +75,7 @@ function App() {
       borderLeft: '3px skyblue dotted',
       padding: 10
     }}>
-    home
+    homers 
     <Menu />
     <Music />
     <Essays />
