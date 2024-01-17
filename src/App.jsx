@@ -1,5 +1,6 @@
 import './App.css'
 import Banner from './components/Banner'
+import Sidebar from './components/Sidebar'
 
 
 function App() {
@@ -7,7 +8,8 @@ function App() {
   return (
     <div>
     
-     <Banner/>
+      <Banner/>
+      <Sidebar/>
 
     </div>
   )

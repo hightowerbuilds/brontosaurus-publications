@@ -1,0 +1,11 @@
+.menuContainer {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    left: 30px;
+    top: 15px;
+    width: 100px;
+    font-family: monospace;
+    font-size: 18px;
+    color: seagreen;
+}
