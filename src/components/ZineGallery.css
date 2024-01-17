@@ -15,7 +15,12 @@
     border: 1px seagreen dotted;
     font-family: monospace;
     color: seagreen;
+    transition: color 0.3s;
 }
+.pageInfo:hover {
+    color:palegreen;
+}
+
 
 .buttonPrev {
     width: 380px;
@@ -23,6 +28,10 @@
     border-radius: 5%;
     font-family: monospace;
     color: seagreen;
+    transition: color 0.3s;
+}
+.buttonPrev:hover {
+    color: palegreen;
 }
 
 .buttonNext {
@@ -31,6 +40,10 @@
     border-radius: 5%;
     font-family: monospace;
     color: seagreen;
+    transition: color 0.3s;
+}
+.buttonNext:hover {
+    color: palegreen;
 }
 
 .buttonBox {
