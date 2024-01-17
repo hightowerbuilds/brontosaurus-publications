@@ -38,12 +38,13 @@ const handleZinesButton = function (){state.zines === COMPONENTS.banner ?  dispa
         <>
         <div className="menuContainer">
            <ul>
-            <span className='zines'onClick={handleZinesButton} >zines </span>
-            <span> music </span>
-            <span> essay </span>
-            <span> shorts </span>
-            <span> photo </span>
-            <span> food </span>
+            <p className='home'>homes</p>
+            <p className='zines' onClick={handleZinesButton} >zines </p>
+            <p className='music'> music </p>
+            <p className='essay'> essay </p>
+            <p className='shorts'> shorts </p>
+            <p className='photo'> photo </p>
+            <p className='food'> food </p>
            </ul>
         </div>
 

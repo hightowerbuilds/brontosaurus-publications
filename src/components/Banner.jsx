@@ -11,7 +11,7 @@ export default function Banner(){
         </div>
         <div className='innerDiv'> 
             <img  className='imageDino' src={DinoCity} />
-            <p className='quote'>"Probably..." - Many Have Said It</p>
+            <p className='quote'>"Stop and smell the volcanos."</p>
         </div>
       </>
       

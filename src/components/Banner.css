@@ -11,17 +11,19 @@
 
 .innerDiv {
     position: absolute;
-    top: 320px;
+    top: 310px;
     left: 150px;
-    height: 600px;
+    height: 580px;
     width: 850px;
     color: seagreen;
     background-color: black;
     font-family: monospace ;
+    border: 1px seagreen dotted;
 }
 
+
 .imageDino {
-    top: 50px;
+    top: 46px;
     height: 540px;
     width: 830px;
     margin-top: 15px;
@@ -29,6 +31,6 @@
 }
 
 .quote {
-    padding-left: 10;
+    margin-left: 10px;
     background-color: black;
 }
