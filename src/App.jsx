@@ -1,4 +1,3 @@
-
 import './App.css'
 import Banner from './components/Banner'
 
@@ -10,12 +9,7 @@ function App() {
     
      <Banner/>
 
- 
-   
     </div>
-    
-
-  
   )
 }
 
