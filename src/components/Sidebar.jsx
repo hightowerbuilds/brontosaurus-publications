@@ -1,18 +1,23 @@
 import './Sidebar.css'
 import { useReducer } from 'react'
 import ZineGallery from './ZineGallery'
+import Banner from './Banner';
 
+const COMPONENTS = {
+  banner: <Banner />,
+  gallery: <ZineGallery/>
+}
 
 const initialState = {
-  zines: ''
+  zines: COMPONENTS.banner
 }
 
 function reducer (state, action){
   switch(action.type){
     case 'open-zines': 
-    return { zines: <ZineGallery/> };
+    return { zines: COMPONENTS.gallery };
     case 'close-zines':
-        return { zines: '' };
+        return { zines: COMPONENTS.banner };
     default:
         return
   };
@@ -25,7 +30,7 @@ function reducer (state, action){
 export default function Sidebar(){
 
 const [ state, dispatch ] = useReducer(reducer, initialState)
-const handleZinesButton = function (){state.zines === '' ?  dispatch({type: 'open-zines'}) : dispatch({ type: 'close-zines'})}
+const handleZinesButton = function (){state.zines === COMPONENTS.banner ?  dispatch({type: 'open-zines'}) : dispatch({ type: 'close-zines'})}
 
 
 
@@ -33,7 +38,7 @@ const handleZinesButton = function (){state.zines === '' ?  dispatch({type: 'ope
         <>
         <div className="menuContainer">
            <ul>
-            <span className='zines' onClick={handleZinesButton} >zines </span>
+            <span className='zines'onClick={handleZinesButton} >zines </span>
             <span> music </span>
             <span> essay </span>
             <span> shorts </span>

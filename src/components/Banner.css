@@ -2,24 +2,28 @@
     display: flex;
     position: absolute;
     left: 150px;
-    height: 190px;
-    width: 790px;
+    height: 290px;
+    width: 850px;
     margin-top: 12px;
     background-color: black;
     border: 1px seagreen dotted;
 }
 
 .innerDiv {
-    height: 190px;
-    width: 250px;
+    position: absolute;
+    top: 320px;
+    left: 150px;
+    height: 600px;
+    width: 850px;
     color: seagreen;
     background-color: black;
     font-family: monospace ;
 }
 
 .imageDino {
-    height: 140px;
-    width: 230px;
+    top: 50px;
+    height: 540px;
+    width: 830px;
     margin-top: 15px;
     margin-left: 10px;
 }

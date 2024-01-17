@@ -2,8 +2,8 @@
     display: flex;
     flex-wrap: wrap;
     position: absolute;
-    top: 210px;
-    left: 30px;
+    top: 25px;
+    left: 150px;
 }
 
 .pageInfo {

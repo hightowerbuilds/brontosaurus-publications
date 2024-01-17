@@ -5,14 +5,16 @@ import './Banner.css'
 
 export default function Banner(){
     return (
+      <>
         <div className='outerDiv'>
-            
-          < img src={BrontoHeader} />
-            <div className='innerDiv'> 
-              <img  className='imageDino' src={DinoCity} />
-              <p className='quote'>"Probably, probably," - Many</p>
-               </div>
-          </div>
+            <img src={BrontoHeader} />
+        </div>
+        <div className='innerDiv'> 
+            <img  className='imageDino' src={DinoCity} />
+            <p className='quote'>"Probably..." - Many Have Said It</p>
+        </div>
+      </>
+      
 
     )
 }
