@@ -75,7 +75,7 @@ function App() {
       borderLeft: '3px skyblue dotted',
       padding: 10
     }}>
-    homers 
+     
     <Menu />
     <Music />
     <Essays />
