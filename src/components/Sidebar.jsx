@@ -33,7 +33,7 @@ const handleZinesButton = function (){state.zines === '' ?  dispatch({type: 'ope
         <>
         <div className="menuContainer">
            <ul>
-            <span onClick={handleZinesButton}>zines </span>
+            <span className='zines' onClick={handleZinesButton} >zines </span>
             <span> music </span>
             <span> essay </span>
             <span> shorts </span>

@@ -9,3 +9,16 @@
     font-size: 18px;
     color: seagreen;
 }
+
+
+.zines {
+    font-family: monospace;
+    font-size: 18px;
+    color: seagreen;
+    transition: color 0.3s;
+}
+.zines:hover {
+    
+    cursor: grab;
+    color:palegreen;
+}
