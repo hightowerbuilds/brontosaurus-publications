@@ -9,7 +9,8 @@ const COMPONENTS = {
 }
 
 const initialState = {
-  zines: COMPONENTS.banner
+  zines: '',
+  home: COMPONENTS.banner
 }
 
 function reducer (state, action){
@@ -17,7 +18,9 @@ function reducer (state, action){
     case 'open-zines': 
     return { zines: COMPONENTS.gallery };
     case 'close-zines':
-        return { zines: COMPONENTS.banner };
+        return { zines: '' };
+    case 'home':
+      return { home : COMPONENTS.banner };
     default:
         return
   };
@@ -30,15 +33,15 @@ function reducer (state, action){
 export default function Sidebar(){
 
 const [ state, dispatch ] = useReducer(reducer, initialState)
-const handleZinesButton = function (){state.zines === COMPONENTS.banner ?  dispatch({type: 'open-zines'}) : dispatch({ type: 'close-zines'})}
-
+const handleZinesButton = function (){state.zines === '' ?  dispatch({type: 'open-zines'}) : dispatch({ type: 'close-zines'})}
+const handleHomeButton = function(){dispatch({ type: 'home' })}
 
 
     return (
         <>
         <div className="menuContainer">
            <ul>
-            <p className='home'>homes</p>
+            <p className='home' onClick={handleHomeButton}>home</p>
             <p className='zines' onClick={handleZinesButton} >zines </p>
             <p className='music'> music </p>
             <p className='essay'> essay </p>
@@ -47,7 +50,7 @@ const handleZinesButton = function (){state.zines === COMPONENTS.banner ?  dispa
             <p className='food'> food </p>
            </ul>
         </div>
-
+        {state.home}
         {state.zines}
         </>
         
