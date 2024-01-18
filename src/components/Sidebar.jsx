@@ -10,7 +10,7 @@ const COMPONENTS = {
 
 const initialState = {
   zines: '',
-  home: COMPONENTS.banner
+  home: ''
 }
 
 function reducer (state, action){
