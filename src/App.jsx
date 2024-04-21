@@ -1,16 +1,17 @@
 import './App.css'
+import { Route, Routes } from 'react-router-dom'
+import Dashboard from './pages/Dashboard'
+import Landing from './pages/Landing'
 
-import Sidebar from './components/Sidebar'
 
 
 function App() {
 
   return (
-    <div>
-    
-      Redo Brontosaurus Publications 
-
-    </div>
+    <Routes>
+    <Route path="/landing" element={<Landing />} />
+    <Route path="/dashboard" element={<Dashboard />} />
+  </ Routes>
   )
 }
 
