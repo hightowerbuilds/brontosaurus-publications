@@ -1,6 +1,17 @@
+import Banner from "../components/Banner"
+
 
 export default function Landing() {
   return (
-    <div>Landing</div>
+    <div style={{
+        height: '100vh',
+        width: '100%',
+        display: 'flex',
+        justifyContent: 'center',
+       
+    }}>
+        <Banner />
+    </div>
+   
   )
 }

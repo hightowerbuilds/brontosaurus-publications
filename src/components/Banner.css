@@ -1,7 +1,7 @@
 .outerDiv {
     display: flex;
     position: absolute;
-    left: 150px;
+    top: 210px;
     height: 290px;
     width: 850px;
     margin-top: 12px;
@@ -11,8 +11,7 @@
 
 .innerDiv {
     position: absolute;
-    top: 310px;
-    left: 150px;
+    top: 520px;
     height: 580px;
     width: 850px;
     color: seagreen;
