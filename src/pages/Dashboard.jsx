@@ -5,7 +5,7 @@ export default function Dashboard() {
   return (
     <div style={{
       height: '100vh',
-      width: '100%',
+      width: '95%',
       border: '3px seagreen dotted',
       margin: '2%'
     }}>
