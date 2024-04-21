@@ -1,7 +1,24 @@
-import React from 'react'
+import { useState } from "react"
+
 
 export default function MessageBoard() {
-  return (
+
+const [ message, setMessage ] = useState('')
+const handleTextInput = (event) => {
+    setMessage(event.target.value)
+}
+
+const [board, setBoard] =  useState('')
+const handleSetBoard = () => {
+    const duffle = [];
+    duffle.push(message)
+   setBoard(duffle) 
+    console.log('working maybe')
+    setMessage('')
+}
+
+
+    return (
     <div>
 
         {/* MESSAGE ANMD COMMENT POSTING */}
@@ -16,17 +33,22 @@ export default function MessageBoard() {
                 flexWrap: 'wrap',
                 justifyContent: 'center'
               }}>
-                <input style={{
-                  height: '40vh',
-                  width: '100%'
-                }} type="text" 
-                placeholder="INPUT TEXT HERE"/>
+                <textarea style={{
+                  height: '30vh',
+                  width: '100%',
+                 padding: '5%'
+                }} 
+                type="text" 
+                placeholder="INPUT TEXT HERE"
+                value={message}
+                onChange={handleTextInput}/>
               <button style={{
                 width: '100%,',
                 height: '2vh',
-              
-              }}>
-                SEND BUTTON
+                fontFamily: 'monospace'
+              }}
+              onClick={handleSetBoard}>
+               BUTTON
               </button>
           </div>
 
@@ -35,8 +57,8 @@ export default function MessageBoard() {
                 border: '2px seagreen solid',
                 margin: '2%'
               }}>
-            POST DISPLAY POST DISPLAY POST DISPLAY POST DISPLAY POST DISPLAY POST DISPLAY  POST DISPLAY POST DISPLAY POST DISPLAY POST DISPLAY POST DISPLAY POST DISPLAY  POST DISPLAY POST DISPLAY POST DISPLAY POST DISPLAY POST DISPLAY POST DISPLAY 
-
+            {message}
+            {board}
           </div>
       </div>
 
