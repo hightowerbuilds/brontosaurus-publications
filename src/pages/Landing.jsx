@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import Banner from "../components/Banner"
 
 
@@ -11,6 +12,15 @@ export default function Landing() {
        
     }}>
         <Banner />
+        <Link style={{
+          position: 'absolute',
+          top: '80%',
+          fontFamily: 'monospace',
+          fontSize: 20,
+          color: 'seagreen'
+        }} to='/dashboard'>
+          Enter
+        </Link>
     </div>
    
   )
