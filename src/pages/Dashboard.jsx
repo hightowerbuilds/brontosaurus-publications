@@ -16,6 +16,7 @@ export default function Dashboard() {
         <p>Brontosaurus Publications</p>  
         <NavLink to='/gallery' >Art Gallery</NavLink>
         <NavLink to='/zines'> Zines </NavLink>
+        <NavLink to='/store'>Gift Shop</NavLink>
       </div>   
    
      
