@@ -5,6 +5,7 @@ import Landing from './pages/Landing'
 import Gallery from './pages/Gallery'
 import Zines from './pages/Zines'
 import GiftShop from './pages/GiftShop'
+import Games from './pages/Games'
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
     <Route path="/gallery" element={<Gallery />}/>
     <Route path='/zines' element={<Zines />}/>
     <Route path='/store' element={<GiftShop/>}  />
+    <Route path='/games' element={<Games/>} />
   </ Routes>
   )
 }
