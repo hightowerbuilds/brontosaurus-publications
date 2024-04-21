@@ -11,7 +11,7 @@ export default function Banner(){
         </div>
         <div className='innerDiv'> 
             <img  className='imageDino' src={DinoCity} />
-            <p className='quote'>"Who is that chewing on Iceland again?."</p>
+            <p className='quote'>"Who is that chewing on Iceland?"</p>
         </div>
       </>
       
