@@ -36,7 +36,7 @@ setError(error)
       height: '100vh',
       width: '100%'
     }}>
-     {isLoading && <p>it is still loading</p>}
+     {isLoading && <p style={{fontSize:56, fontFamily: 'cursive'}}>it is still loading</p>}
      {error && <p>there has been an error</p>}
    
     <PostCard 
