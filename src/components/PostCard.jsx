@@ -3,7 +3,7 @@ export default function PostCard(props) {
   return (
     <div>
         <p style={{
-            border: '2px seagreen solid',
+            border: '2px seagreen dashed',
             fontFamily: 'monospace',
             padding: '2%'
         }}>
