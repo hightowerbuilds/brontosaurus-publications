@@ -5,7 +5,8 @@ export default function PostCard(props) {
         <p style={{
             border: '2px seagreen dashed',
             fontFamily: 'monospace',
-            padding: '2%'
+            padding: '2%',
+            margin: '1%'
         }}>
            NAME: {props.name} 
             <br />
