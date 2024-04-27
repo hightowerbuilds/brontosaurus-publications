@@ -24,7 +24,7 @@ export default function AddMessage() {
         console.log('success');
 
       } catch (error) {
-
+        setError('error')
         console.log('error')
       }
 
