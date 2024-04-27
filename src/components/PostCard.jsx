@@ -5,6 +5,8 @@ export default function PostCard(props) {
         <p style={{
             border: '2px seagreen dashed',
             fontFamily: 'monospace',
+            fontSize: 15,
+            color: 'oldlace',
             padding: '2%',
             margin: '1%'
         }}>
@@ -14,11 +16,6 @@ export default function PostCard(props) {
             <br />
             <br />
            POST: {props.post}
-            <br />
-            <br />
-           NUMBER OF VIEWS: {props.views}
-            <br />
-           NUMBER OF REPLIES: {props.replies}
         </p>
     </div>
   )
