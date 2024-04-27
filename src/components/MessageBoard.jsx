@@ -31,7 +31,7 @@ setError(error)
         key={message.id}  
         name={message.name} 
         created={message.created_at}
-       
+        post={message.post}
       />
     ));
   };
