@@ -26,13 +26,12 @@ setError(error)
 
 
   const renderPostCards = () => {
-    return messages.map((message) => (
+    return [...messages].reverse().map((message) => (
       <PostCard 
         key={message.id}  
         name={message.name} 
         created={message.created_at}
-        post={message.post}
-        views={message.views}
+       
       />
     ));
   };
