@@ -18,7 +18,7 @@ export default function Landing() {
           fontFamily: 'monospace',
           fontSize: 20,
           color: 'seagreen'
-        }} to='/dashboard'>
+        }} to='/'>
           Enter
         </Link>
     </div>
