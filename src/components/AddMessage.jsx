@@ -54,7 +54,7 @@ export default function AddMessage() {
           color: 'oldlace',
           borderRadius: 10,
           padding: 10,
-          margin: 10,
+          margin: 15,
           backgroundColor: 'darkgreen'
         }}
       />
@@ -67,7 +67,7 @@ export default function AddMessage() {
           color: 'oldlace',
           borderRadius: 10,
           padding: 10,
-          margin: 10,
+          margin: 15,
           backgroundColor: 'darkgreen'
         }}
       />
@@ -78,7 +78,8 @@ export default function AddMessage() {
         color: 'oldlace',
         fontSize: 16,
         borderRadius: 10,
-        padding: 10
+        padding: 10,
+        margin: 15,
       }}
       >
         {isLoading ? 'Adding message...' : 'Add Message'}
