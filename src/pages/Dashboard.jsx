@@ -43,9 +43,10 @@ export default function Dashboard() {
         <NavLink to='/store' style={{
           margin: '5%'
         }}>Gift Shop</NavLink>
-        <NavLink to='/games' style={{
+        <NavLink to='/snake' style={{
           margin: '5%'
         }}>Games</NavLink>
+        
        
         
         </p>
