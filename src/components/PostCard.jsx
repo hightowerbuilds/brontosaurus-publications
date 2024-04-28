@@ -1,5 +1,30 @@
 
+import { supabase } from "../services/supabase"
+
+
+
 export default function PostCard(props) {
+ 
+ 
+async function deleteRow (id) {
+    try {
+      const { error, } = await supabase
+      .from('message_board')
+      .delete()
+      .eq('id', id)
+      if (error) console.log(error);
+    } catch (error) {
+      console.log(error)
+    }
+}
+
+
+const handleDelete = () => {
+    deleteRow();
+   
+}
+
+
   return (
     <div>
         <p style={{
@@ -27,11 +52,16 @@ export default function PostCard(props) {
           padding: 7,
           color: 'seagreen'
         }}>edit</button>
-        <button style={{
+        <button 
+        style={{
           borderRadius: 10,
           padding: 7,
           color: 'seagreen'
-        }}>delete</button>
+        }}
+        onClick={handleDelete}
+        >
+          delete
+        </button>
         </p>
        
         </p>

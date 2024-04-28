@@ -1,4 +1,3 @@
-
 import { useState } from 'react'; 
 import { supabase } from '../services/supabase';
 
@@ -12,22 +11,18 @@ export default function AddMessage() {
 
     async function generateRow (tableName, data){
 
-      // setIsLoading(true)
 
       try {
         const { error } = await supabase
         .from(tableName)
         .insert([data]);
-
         if (error) throw error;
         setIsLoading(false)
         console.log('success');
-
       } catch (error) {
         setError('error')
         console.log('error')
       }
-
     }
 
     const rowData = {
