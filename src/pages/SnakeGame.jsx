@@ -1,12 +1,13 @@
 import './SnakeGame.css'
 import { NavLink } from 'react-router-dom'
+// import { GoogleFont } from 'react-google-fonts';
 
 
 export default function SnakeGame() {
   return (
     <div className=" pageContainer">
-
-
+      {/* <GoogleFont fonts={['VT323', 'Open Sans']}/> */}
+          {/* <p style={{ fontFamily: 'VT323'}}> letters go here </p> */}
         <div>
             <div className="scores">
                 <h1 className="score">current score: 000</h1>
@@ -31,10 +32,10 @@ export default function SnakeGame() {
             position: 'absolute',
             top: '90vh',
             left: '5vh',
-            fontSize: 16,
+            fontSize: 36,
             backgroundColor: 'gold'
           }}
-        >back to dashboard</NavLink>
+        >BACK TO DASHBOARD</NavLink>
     </div>
   )
 }
