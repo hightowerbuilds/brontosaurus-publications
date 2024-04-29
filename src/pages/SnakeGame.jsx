@@ -5,30 +5,39 @@ import { NavLink } from 'react-router-dom'
 
 export default function SnakeGame() {
 
+// game variables
+  const board = document.getElementsByClassName('gameBoard')
+  console.log(board)
+  let snake = [{ x: 10, y: 10 }];
 
-// how to translate this js into react logic? 
-
-// draw board 
-// draw snake
-
-// this puts the snake in the center of this gameboard 
-// const snake = [{ x: 10, y: 10 }];
+function draw(){
+  board.innerHTML = '';
+  drawSnake();
+}
 
 function drawSnake() {
   snake.forEach((segment) => {
-    const snakeElement = createGameElement('div', 'snake')
+    const snakeElement = createGameElement('div', 'snake');
+    setPosition(snakeElement, segment);
+    board.appendChild(snakeElement)
   })
 }
 
 function createGameElement(tag, className){
-  return 
+  const element = document.createElement(tag);
+  element.className = className;
+  return element;
 }
 
+function setPosition(element, position){
+    element.style.gridColumn = position.x;
+    element.style.gridRow = position.y;
+}
+
+const handleDraw = () => { draw(); }
 
   return (
     <div className=" pageContainer">
-      {/* <GoogleFont fonts={['VT323', 'Open Sans']}/> */}
-          {/* <p style={{ fontFamily: 'VT323'}}> letters go here </p> */}
         <div>
             <div className="scores">
                 <h1 className="score">current score: 000</h1>
@@ -39,7 +48,7 @@ function createGameElement(tag, className){
                 <div className="gameBorderTwo">
                   <div className='gameBorderThree'>
                     <div className='gameBoard'>
-
+                
                     </div>
                   </div>
                 </div>
