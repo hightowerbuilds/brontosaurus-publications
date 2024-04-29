@@ -1,6 +1,8 @@
 import { NavLink } from "react-router-dom"
 import MessageBoard from "../components/MessageBoard"
 import BrontoHeader from '../images/bronto-header.jpg'
+import Footer from "../components/Footer"
+
 
 export default function Dashboard() {
   return (
@@ -25,7 +27,11 @@ export default function Dashboard() {
           fontSize: 30,
           margin: 10
         }}>
-          <img src={BrontoHeader}/>
+          <img 
+          style={{
+            border: '1px seagreen solid'
+          }} 
+          src={BrontoHeader}/>
         </p>  
         <p style={{
         display: 'inline-flex',
@@ -55,7 +61,7 @@ export default function Dashboard() {
    
 
         <MessageBoard />
-      
+        <Footer />
 
     </div>
   )

@@ -1,0 +1,10 @@
+.footer {
+    position: fixed;
+    top: 95vh;
+    height: 5vh;
+    width: 94%;
+    border-top: 2px seagreen solid;
+    padding: 5px;
+    font-family: monospace;
+    font-size: 20px;
+}
