@@ -4,6 +4,8 @@
     width: 100%;
     display: flex;
     font-family: "VT323", monospace;
+    justify-content: center;
+    align-items: center  ;
 }
 
 .scores { 
@@ -26,13 +28,33 @@
     border: 1px seagreen solid;
 }
 
-.gameBorderOne {}
+.gameBorderOne {
+    border: #595f43 10px solid;
+    border-radius: 2%;
+    margin-bottom: -5%;
+    margin-top: -5%;
+}
 
-.gameBorderTwo {}
+.gameBorderTwo {
+    border: #7b9421 10px solid;
+    border-radius: 1%;
+    margin-bottom: -5%;
+    margin-top: -5%;}
 
-.gameBorderThree {}
+.gameBorderThree {
+    border: #9aaa5f 10px solid;
+    border-radius: 2%;
+    margin-bottom: -5%;
+    margin-top: -5%;
+}
 
-.gameBoard {}
+.gameBoard {
+    border-radius: 100px;
+    display: grid;
+    grid-template-columns: repeat(20, 20px);
+    grid-template-rows: repeat(20, 20px);
+    margin: 5px;
+}
 
 .gameStart {
     display: flex;

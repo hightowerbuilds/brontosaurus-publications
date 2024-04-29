@@ -27,7 +27,8 @@ export default function SnakeGame() {
           <h1 className='gameStart'>press spacebar to start the game</h1>
           <img src="" className='snakeLogo' />
         </div>
-        <NavLink to='/' 
+        <NavLink 
+          to='/' 
           style={{
             position: 'absolute',
             top: '90vh',
@@ -35,7 +36,9 @@ export default function SnakeGame() {
             fontSize: 36,
             backgroundColor: 'gold'
           }}
-        >BACK TO DASHBOARD</NavLink>
+        >
+        BACK TO DASHBOARD
+        </NavLink>
     </div>
   )
 }
