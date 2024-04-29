@@ -4,6 +4,27 @@ import { NavLink } from 'react-router-dom'
 
 
 export default function SnakeGame() {
+
+
+// how to translate this js into react logic? 
+
+// draw board 
+// draw snake
+
+// this puts the snake in the center of this gameboard 
+// const snake = [{ x: 10, y: 10 }];
+
+function drawSnake() {
+  snake.forEach((segment) => {
+    const snakeElement = createGameElement('div', 'snake')
+  })
+}
+
+function createGameElement(tag, className){
+  return 
+}
+
+
   return (
     <div className=" pageContainer">
       {/* <GoogleFont fonts={['VT323', 'Open Sans']}/> */}
