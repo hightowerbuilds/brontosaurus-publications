@@ -16,12 +16,15 @@ export default function Dashboard() {
       <div style={{
         display: 'inline-flex',
         width: '100%',
-        borderBottom: '2px seagreen dotted'
+        borderBottom: '2px seagreen dotted',
+        backgroundColor: '#47045844',
+        borderRadius: 1
       }}>
         <p style={{
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
+         
           width: '50%',
           fontFamily: 'monospace',
           fontSize: 30,
@@ -29,7 +32,8 @@ export default function Dashboard() {
         }}>
           <img 
           style={{
-            border: '1px seagreen solid'
+            border: '1px seagreen solid',
+            borderRadius: 2,
           }} 
           src={BrontoHeader}/>
         </p>  
