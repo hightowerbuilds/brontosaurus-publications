@@ -8,11 +8,11 @@
     border-top: 2px seagreen solid;
     padding: 5px;
     font-family: "VT323", monospace;
-    font-size: 36px;
-    transition: 1000ms
+    font-size: 46px;
+    transition: 100ms
 }
 
 .footer:hover{
     font-family: "Jacquard 12 Charted", system-ui;
-    font-size: 76px;
+    font-size: 56px;
 }
