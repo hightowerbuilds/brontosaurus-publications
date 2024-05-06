@@ -54,17 +54,36 @@ function MessageBoard() {
   
   const handleInsert = () => { createMessage('message_board', rowData)}
 
-
+  const deleteMessage = async (id) => {
+    try {
+      const { error } = await supabase.from('message_board').delete().eq('id', id);
+      if (error) {
+        throw error;
+      }
+      setMessages(messages.filter((message) => message.id !== id));
+    } catch (error) {
+      console.error('Error deleting message:', error.message);
+    }
+  };
 
   const renderPostCards = () => {
     return [...messages].reverse().map((message) => (
-      <PostCard 
+      <>
+        <PostCard 
         key={message.id}  
         name={message.name} 
         created={message.created_at}
         post={message.post}
-      
+        delete={<button style={{
+          borderRadius: 10, 
+          padding: 7,
+          color: 'seagreen'
+        }} onClick={() => deleteMessage(message.id)}>delete</button>}
       />
+      
+      </>
+    
+      
     ));
   };
 

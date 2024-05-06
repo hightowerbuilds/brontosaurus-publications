@@ -24,12 +24,7 @@ export default function PostCard(props) {
         marginTop: 5,
         
         }}>
-        <button style={{
-          borderRadius: 10, 
-          padding: 7,
-          color: 'seagreen'
-        }}>edit</button>
-        
+      {props.delete}
         </p>
        
         </p>
