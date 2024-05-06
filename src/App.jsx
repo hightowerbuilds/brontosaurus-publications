@@ -7,7 +7,6 @@ import Zines from './pages/Zines'
 import GiftShop from './pages/GiftShop'
 import Games from './pages/Games'
 import SnakeGame from './pages/SnakeGame'
-import SampleComponent from './components/SampleComponent'
 
 function App() {
 
