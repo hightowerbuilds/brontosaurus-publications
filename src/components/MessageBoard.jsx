@@ -1,28 +1,59 @@
 import { useState, useEffect } from 'react';
 import { supabase } from '../services/supabase';
 import PostCard from './PostCard';
-import AddMessage from './AddMessage';
 
 
 function MessageBoard() {
   const [messages, setMessages] = useState([]);
+  const [newMessage, setNewMessage] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
+  const [newName, setNewName] = useState('');
 
   useEffect(() => {
-    const fetchData = async () => {
-    setIsLoading(true)
-const { data, error } = await supabase
-.from('message_board')
-.select()
-console.log(data, error)
-setMessages(data)
-setIsLoading(false)
-setError(error)
-    };
-
     fetchData();
   }, []);
+
+  const fetchData = async () => {
+
+    try {
+      let { data: messages, error } = await supabase
+        .from('message_board')
+        .select('*')
+        .order('created_at', { ascending: false });
+      if (error) {
+        throw error;
+      }
+      setMessages(messages);
+    } catch (error) {
+      console.error('Error fetching messages:', error.message);
+    }
+
+    };
+
+    async function createMessage(tableName, data) {
+
+   
+      try {
+          const { error } = await supabase
+          .from(tableName)
+          .insert([data]);
+          if (error) throw error;
+          setIsLoading(false)
+          console.log('success');
+        } catch (error) {
+          setError('error')
+          console.log('error')
+        }
+      }
+
+  const rowData = {
+      name: newName,
+      post: newMessage
+  }
+  
+  const handleInsert = () => { createMessage('message_board', rowData)}
+
 
 
   const renderPostCards = () => {
@@ -32,9 +63,12 @@ setError(error)
         name={message.name} 
         created={message.created_at}
         post={message.post}
+      
       />
     ));
   };
+
+
 
   return (
     <div style={{
@@ -43,12 +77,48 @@ setError(error)
      
     }}>
      {isLoading && <p style={{fontSize: 56, fontFamily: 'cursive'}}>CURRENTLY LOADING</p>}
-     {error && <p>there has been an error</p>}
+     {error && 911}
    
 
-  <AddMessage/>
-
-   
+     <input
+        type="text"
+        value={newName}
+        onChange={(e) => setNewName(e.target.value)}
+        placeholder="Enter your Name"
+        style={{
+          color: 'oldlace',
+          borderRadius: 10,
+          padding: 10,
+          margin: 15,
+          backgroundColor: 'darkgreen'
+        }}
+      />
+    <input
+        type="text"
+        value={newMessage}
+        onChange={(e) => setNewMessage(e.target.value)}
+        placeholder="Enter your message"
+        style={{
+          color: 'oldlace',
+          borderRadius: 10,
+          padding: 10,
+          margin: 15,
+          backgroundColor: 'darkgreen'
+        }}
+      />
+       <button 
+      
+        onClick={handleInsert}
+      style={{
+        color: 'oldlace',
+        fontSize: 16,
+        borderRadius: 10,
+        padding: 10,
+        margin: 15,
+      }}
+      >
+        {isLoading ? 'Adding message...' : 'Add Message'}
+      </button>
   <p>
     {renderPostCards()}
   </p>
