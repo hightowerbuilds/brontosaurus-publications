@@ -25,7 +25,7 @@ export default function Dashboard() {
           justifyContent: 'center',
           alignItems: 'center',
          
-          width: '50%',
+          // width: '50%',
           fontFamily: 'monospace',
           fontSize: 30,
           margin: 10
@@ -45,16 +45,28 @@ export default function Dashboard() {
         alignItems: 'center'
       }}>
         <NavLink to='/gallery' style={{
-          margin: '5%'
+          margin: '5%',
+          fontFamily: 'monospace',
+           fontSize: 24,
+           color: 'seagreen'
         }}>Art Gallery</NavLink>
         <NavLink to='/zines' style={{
-          margin: '5%'
+          margin: '5%',
+          fontFamily: 'monospace',
+           fontSize: 44,
+           color: 'seagreen'
         }}> Zines </NavLink>
         <NavLink to='/store' style={{
-          margin: '5%'
+          margin: '5%',
+          fontFamily: 'monospace',
+           fontSize: 24,
+           color: 'seagreen'
         }}>Gift Shop</NavLink>
         <NavLink to='/snake' style={{
-          margin: '5%'
+          margin: '5%',
+          fontFamily: 'monospace',
+           fontSize: 34,
+           color: 'seagreen'
         }}>Games</NavLink>
         
        
