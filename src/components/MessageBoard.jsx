@@ -67,7 +67,7 @@ function MessageBoard() {
   };
 
   const renderPostCards = () => {
-    return [...messages].reverse().map((message) => (
+    return [...messages].map((message) => (
       <>
         <PostCard 
         key={message.id}  
