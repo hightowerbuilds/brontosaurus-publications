@@ -6,13 +6,12 @@ export default function Covers() {
         display: 'flex',
         justifyContent: 'center',
         backgroundColor: 'inherit',
-       
+       margin: 30
     }}>
         <img 
             src={CoverTwo}
             style={{
                 borderRadius: 3,
-              
             }} />
     </div>
   )
