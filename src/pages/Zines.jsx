@@ -17,13 +17,24 @@ export default function Zines() {
         fontSize: 22,
         marginTop: 30,
       }}>
-      Zines
-      <br />
+
       <Covers />
-    
+      <br />
+      
+
+      <p style={{
+        backgroundColor: 'inherit', 
+        margin: 50
+      }}>
+        Zines 
+        <br /> 
+        <br />
+        It's not a palace, or riveted barge, infested den, nor raft of Medusa. It's not a thing.  
+        <br /> 
+        <br />
+        Get ready because this might actually make sense. 
       </p>
-    
-   
+      </p>
     </div>
   )
 }
