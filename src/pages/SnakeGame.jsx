@@ -20,6 +20,7 @@ function drawSnake() {
     const snakeElement = createGameElement('div', 'snake');
     setPosition(snakeElement, segment);
     board.appendChild(snakeElement)
+    console.log(snakeElement)
   })
 }
 
@@ -34,7 +35,7 @@ function setPosition(element, position){
     element.style.gridRow = position.y;
 }
 
-const handleDraw = () => { draw(); }
+
 
   return (
     <div className=" pageContainer">
@@ -48,7 +49,7 @@ const handleDraw = () => { draw(); }
                 <div className="gameBorderTwo">
                   <div className='gameBorderThree'>
                     <div className='gameBoard'>
-                
+          
                     </div>
                   </div>
                 </div>
