@@ -1,21 +1,27 @@
-import ZinesBanner from '../images/Zines.png'
-
+import Covers from "../components/Covers";
 
 export default function Zines() {
   return (
-    <div>
-      <div style={{
-        display: 'flex',
-        justifyContent: 'center',
-        height: '40vh',
-        width: '100%',
-        border: '1px seagreen solid'
+    <div style={{
+      height: '100vh',
+      width: '100%',
+      backgroundColor: 'darkgray',
+      border: '2px maroon dotted', 
+      display: 'flex',
+      justifyContent: 'center'
+      
+    }}>
+      <p style={{
+        backgroundColor: 'inherit',
+        fontFamily: 'monospace',
+        fontSize: 22,
+        marginTop: 30,
       }}>
-        <img src={ZinesBanner}/>
-      </div>
-
-
-
+      Zines
+      <br />
+      <Covers />
+      </p>
+      
     </div>
   )
 }
