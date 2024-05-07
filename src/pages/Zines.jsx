@@ -20,8 +20,10 @@ export default function Zines() {
       Zines
       <br />
       <Covers />
+    
       </p>
-      
+    
+   
     </div>
   )
 }

@@ -52,7 +52,11 @@ function MessageBoard() {
       post: newMessage
   }
   
-  const handleInsert = () => { createMessage('message_board', rowData)}
+  const handleInsert = () => { 
+    createMessage('message_board', rowData)
+    setNewMessage('');
+    setNewName('')
+  }
 
   const deleteMessage = async (id) => {
     try {
