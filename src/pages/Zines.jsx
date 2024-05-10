@@ -5,7 +5,7 @@ export default function Zines() {
     <div style={{
       height: '100vh',
       width: '100%',
-      backgroundColor: 'darkgray',
+      backgroundColor: '#242424',
       border: '2px maroon dotted', 
       display: 'flex',
       justifyContent: 'center'
@@ -24,15 +24,15 @@ export default function Zines() {
 
       <p style={{
         backgroundColor: 'inherit', 
-        margin: 50
+        margin: 50,
+      
       }}>
         Zines 
         <br /> 
         <br />
         It's not a palace, or riveted barge, infested den, nor raft of Medusa. It's not a thing.  
         <br /> 
-        <br />
-        Get ready because this might actually make sense. 
+        Be ready because this might make sense. 
       </p>
       </p>
     </div>

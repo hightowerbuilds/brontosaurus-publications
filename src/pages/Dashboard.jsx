@@ -12,7 +12,7 @@ export default function Dashboard() {
       border: '2px seagreen dotted',
       margin: '2%'
     }}> 
-  {/* THIS DIV IS THE HEADING AND HAS THE NAV BAR */}
+ 
       <div style={{
         display: 'inline-flex',
         width: '100%',
@@ -24,8 +24,6 @@ export default function Dashboard() {
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
-         
-          // width: '50%',
           fontFamily: 'monospace',
           fontSize: 30,
           margin: 10
@@ -44,38 +42,43 @@ export default function Dashboard() {
         justifyContent: 'center',
         alignItems: 'center'
       }}>
-        <NavLink to='/gallery' style={{
-          margin: '5%',
-          fontFamily: 'monospace',
-           fontSize: 24,
-           color: 'seagreen'
+        <NavLink 
+        to='/gallery' 
+        style={{
+            margin: '5%',
+            fontFamily: 'monospace',
+            fontSize: 24,
+            color: 'seagreen'
         }}>Art Gallery</NavLink>
-        <NavLink to='/zines' style={{
-          margin: '5%',
-          fontFamily: 'monospace',
-           fontSize: 44,
-           color: 'seagreen'
+        <NavLink 
+        to='/zines' 
+        style={{
+            margin: '5%',
+            fontFamily: 'monospace',
+            fontSize: 34,
+            color: 'seagreen'
         }}> Zines </NavLink>
-        <NavLink to='/store' style={{
-          margin: '5%',
-          fontFamily: 'monospace',
-           fontSize: 24,
-           color: 'seagreen'
+        <NavLink 
+        to='/store' 
+        style={{
+            margin: '5%',
+            fontFamily: 'monospace',
+            fontSize: 34,
+            color: 'seagreen'
         }}>Gift Shop</NavLink>
-        <NavLink to='/snake' style={{
-          margin: '5%',
-          fontFamily: 'monospace',
-           fontSize: 34,
-           color: 'seagreen'
+        <NavLink 
+        to='/snake' 
+        style={{
+            margin: '5%',
+            fontFamily: 'monospace',
+            fontSize: 34,
+            color: 'seagreen'
         }}>Games</NavLink>
-        
-       
         
         </p>
       
       </div>   
    
-
         <MessageBoard />
         <Footer />
 
