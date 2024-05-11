@@ -31,8 +31,7 @@ export default function Zines() {
         <br /> 
         <br />
         It's not a palace, or riveted barge, infested den, nor raft of Medusa. It's not a thing.  
-        <br /> 
-        Be ready because this might make sense. 
+        <br />    
       </p>
       </p>
     </div>

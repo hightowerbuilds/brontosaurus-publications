@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom"
 import MessageBoard from "../components/MessageBoard"
 import BrontoHeader from '../images/bronto-header.jpg'
 import Footer from "../components/Footer"
-
+import ZineTwo from '../images/ZineTwoCover.jpg'
 
 export default function Dashboard() {
   return (
@@ -10,7 +10,8 @@ export default function Dashboard() {
       height: '90vh',
       width: '95%',
       border: '2px seagreen dotted',
-      margin: '2%'
+      margin: '2%',
+    
     }}> 
  
       <div style={{
@@ -78,7 +79,11 @@ export default function Dashboard() {
         </p>
       
       </div>   
-   
+        <img 
+        style={{
+          padding: 10
+        }}
+        src={ZineTwo}  />
         <MessageBoard />
         <Footer />
 

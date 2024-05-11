@@ -97,11 +97,19 @@ function MessageBoard() {
     <div style={{
       height: '100vh',
       width: '100%',
-     
+      
     }}>
      {isLoading && <p style={{fontSize: 56, fontFamily: 'cursive'}}>CURRENTLY LOADING</p>}
      {error && 911}
-   
+
+    <p style={{
+      fontFamily: 'monospace',
+      fontSize: 36,
+      paddingLeft: 50,
+      paddingTop: 10,
+      marginTop: 10,
+      borderTop: '3px seagreen solid'
+    }}>MESSAGE BOARD</p>
 
      <input
         type="text"
