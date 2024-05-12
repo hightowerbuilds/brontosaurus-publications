@@ -19,8 +19,7 @@ function App() {
     <Route path='/zines' element={<Zines />}/>
     <Route path='/store' element={<GiftShop/>}  />
     <Route path='/games' element={<Games/>} />
-    <Route path='/snake' element={<SnakeGame/>}/>
-    <Route path='/snaketwo' element={<SnakeGameTwo/>}/>
+    <Route path='/snake' element={<SnakeGameTwo/>}/>
   </ Routes>
   )
 }

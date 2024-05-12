@@ -1,9 +1,24 @@
 
-import { useState, useEffect, useRef } from 'react'; 
+import { useEffect, useRef } from 'react'; 
   
 
-export function useInterval() {
-  return (
-    <div>useInterval</div>
-  )
+export function useInterval(callback, delay) { 
+    
+    const savedCallback = useRef(); 
+  
+    // To remember the latest callback . 
+    useEffect(() => { 
+        savedCallback.current = callback; 
+    }, [callback]); 
+  
+   
+    useEffect(() => { 
+        function func() { 
+            savedCallback.current(); 
+        } 
+        if (delay !== null) { 
+            let id = setInterval(func, delay); 
+            return () => clearInterval(id); 
+        } 
+    }, [delay]); 
 }
