@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom"
 import MessageBoard from "../components/MessageBoard"
 import BrontoHeader from '../images/bronto-header.jpg'
 import Footer from "../components/Footer"
-import ZineTwo from '../images/ZineTwoCover.jpg'
+import CityBronto from '../images/cityBronto.jpg'
 
 export default function Dashboard() {
   return (
@@ -79,11 +79,18 @@ export default function Dashboard() {
         </p>
       
       </div>   
-        <img 
+
+      <section style={{
+        display: 'flex',
+        justifyContent: 'center'
+      }}>
+      <img 
         style={{
-          padding: 10
+          padding: 10,
         }}
-        src={ZineTwo}  />
+        src={CityBronto}  />
+      </section>
+       
         <MessageBoard />
         <Footer />
 
