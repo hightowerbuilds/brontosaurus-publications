@@ -3,25 +3,27 @@ import MessageBoard from "../components/MessageBoard"
 import BrontoHeader from '../images/bronto-header.jpg'
 import Footer from "../components/Footer"
 import CityBronto from '../images/cityBronto.jpg'
+import './Dashboard.css'
+
+
 
 export default function Dashboard() {
   return (
-    <div style={{
-      height: '90vh',
-      width: '95%',
-      // border: '2px seagreen dotted',
-      margin: '2%',
-    
-    }}> 
- 
-      <div style={{
+
+    <div className="outerContainer"> 
+   
+      <div 
+      className="innerContainer"
+      style={{
         display: 'inline-flex',
         width: '100%',
         borderBottom: '2px seagreen dotted',
         backgroundColor: '#47045844',
         borderRadius: 1
       }}>
-        <p style={{
+        <p 
+        className="headingP"
+        style={{
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
@@ -30,13 +32,16 @@ export default function Dashboard() {
           margin: 10
         }}>
           <img 
+          className="headingImg"
           style={{
             border: '1px seagreen solid',
             borderRadius: 2,
           }} 
           src={BrontoHeader}/>
         </p>  
-        <p style={{
+        <p 
+        className="navP"
+        style={{
         display: 'inline-flex',
         width: '100%',
         borderLeft: '2px seagreen dotted',
@@ -44,6 +49,7 @@ export default function Dashboard() {
         alignItems: 'center'
       }}>
         <NavLink 
+        className="galleryNavLink"
         to='/gallery' 
         style={{
             margin: '5%',
@@ -52,6 +58,7 @@ export default function Dashboard() {
             color: 'seagreen'
         }}>Art Gallery</NavLink>
         <NavLink 
+        className="zineNavLink"
         to='/zines' 
         style={{
             margin: '5%',
@@ -60,6 +67,7 @@ export default function Dashboard() {
             color: 'seagreen'
         }}> Zines </NavLink>
         <NavLink 
+        className="storeNavLink"
         to='/store' 
         style={{
             margin: '5%',
@@ -67,7 +75,8 @@ export default function Dashboard() {
             fontSize: 34,
             color: 'seagreen'
         }}>Gift Shop</NavLink>
-        <NavLink 
+        <NavLink
+        className="gamesNavLink" 
         to='/games' 
         style={{
             margin: '5%',
@@ -80,11 +89,14 @@ export default function Dashboard() {
       
       </div>   
 
-      <section style={{
+      <section 
+      className="mainSection"
+      style={{
         display: 'flex',
         justifyContent: 'center'
       }}>
-      <img 
+      <img
+        className="mainImg"
         style={{
           padding: 10,
         }}
