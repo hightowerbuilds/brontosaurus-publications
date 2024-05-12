@@ -7,6 +7,7 @@ import Zines from './pages/Zines'
 import GiftShop from './pages/GiftShop'
 import Games from './pages/Games'
 import SnakeGame from './pages/SnakeGame'
+import SnakeGameTwo from './pages/SnakeGameTwo'
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
     <Route path='/store' element={<GiftShop/>}  />
     <Route path='/games' element={<Games/>} />
     <Route path='/snake' element={<SnakeGame/>}/>
+    <Route path='/snaketwo' element={<SnakeGameTwo/>}/>
   </ Routes>
   )
 }
