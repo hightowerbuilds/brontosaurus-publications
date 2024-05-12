@@ -2,10 +2,6 @@ import './Footer.css'
 
 export default function Footer() {
   return (
-    <div 
-        className="footer"
-      >
-        Brontosaurus Publications
-    </div>
+    <div className="footer">Brontosaurus Publications</div>
   )
 }

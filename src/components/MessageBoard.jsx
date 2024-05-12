@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { supabase } from '../services/supabase';
 import PostCard from './PostCard';
-
+import './MessageBoard.css'
 
 function MessageBoard() {
   const [messages, setMessages] = useState([]);
@@ -15,7 +15,6 @@ function MessageBoard() {
   }, []);
 
   const fetchData = async () => {
-
     try {
       let { data: messages, error } = await supabase
         .from('message_board')
@@ -27,13 +26,9 @@ function MessageBoard() {
       setMessages(messages);
     } catch (error) {
       console.error('Error fetching messages:', error.message);
-    }
+    }};
 
-    };
-
-    async function createMessage(tableName, data) {
-
-   
+   const createMessage = async (tableName, data) => {
       try {
           const { error } = await supabase
           .from(tableName)
@@ -84,72 +79,37 @@ function MessageBoard() {
           color: 'seagreen'
         }} onClick={() => deleteMessage(message.id)}>delete</button>}
       />
-      
       </>
-    
-      
     ));
   };
 
 
 
   return (
-    <div style={{
-      height: '100vh',
-      width: '100%',
-      
-    }}>
+    <div className='outerBox'>
      {isLoading && <p style={{fontSize: 56, fontFamily: 'cursive'}}>CURRENTLY LOADING</p>}
      {error && 911}
 
-    <p style={{
-      fontFamily: 'monospace',
-      fontSize: 36,
-      paddingLeft: 50,
-      paddingTop: 10,
-      marginTop: 10,
-      borderTop: '3px seagreen solid'
-    }}>MESSAGE BOARD</p>
-
+    <p className='titleP'>MESSAGE BOARD</p>
+    
      <input
         type="text"
         value={newName}
         onChange={(e) => setNewName(e.target.value)}
         placeholder="Enter your Name"
-        style={{
-          color: 'oldlace',
-          borderRadius: 10,
-          padding: 10,
-          margin: 15,
-          backgroundColor: 'darkgreen'
-        }}
-      />
+        className='inputName'/>
+
     <input
         type="text"
         value={newMessage}
         onChange={(e) => setNewMessage(e.target.value)}
         placeholder="Enter your message"
-        style={{
-          color: 'oldlace',
-          borderRadius: 10,
-          padding: 10,
-          margin: 15,
-          backgroundColor: 'darkgreen'
-        }}
-      />
-       <button 
-      
-        onClick={handleInsert}
-      style={{
-        color: 'oldlace',
-        fontSize: 16,
-        borderRadius: 10,
-        padding: 10,
-        margin: 15,
-      }}
-      >
-        {isLoading ? 'Adding message...' : 'Add Message'}
+        className='inputName'/>
+
+       <button onClick={handleInsert} className='addMessageButton'>
+          {isLoading ? 'Adding message...' : 'Add Message'}
       </button>
+
   <p>
     {renderPostCards()}
   </p>
