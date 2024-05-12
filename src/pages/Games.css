@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.headingBox {
+    display: inline-flex;
+}
+
+.gamesHeading {
+    font-family: 'Press Start 2P';
+    font-size: 46px;
+    margin: 30px;
+    color: seagreen;
+    transition: 500ms ease-in-out;
+}
+
+.gamesHeading:hover {
+    color: orange;
+    border-bottom: #FFA500 10px solid;
+}
+
+.subtitle {
+    font-family: 'Press Start 2P';
+    font-size: 26px;
+    margin: 30px;
+    color: #242424;
+    transition: 500ms ease-in-out;
+}
+.subtitle:hover {
+   color: orangered;
+}
+.subtitleTwo {
+    font-family: 'Press Start 2P';
+    font-size: 26px;
+    margin: 30px;
+    color: #242424;
+    transition: 500ms ease-in-out;
+}
+.subtitleTwo:hover {
+   color: rgb(248, 44, 44);
+}
+
+.snakeHeading {
+    font-family: 'Press Start 2P';
+    font-size: 30px;
+    margin: 30px;
+    color: seagreen;
+    transition: 500ms ease-in-out;
+}
+
+.snakeHeading:hover {
+    background: linear-gradient(45deg, #FFA500, #000000);
+    color: red;
+    font-size: 80px;
+}
+
+.backButton {
+    font-family: 'Press Start 2P';
+    font-size: 30px;
+    margin: 30px;
+    color: seagreen;
+}

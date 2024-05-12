@@ -1,6 +1,35 @@
+import { NavLink } from "react-router-dom"
+import './Games.css'
+
+
 
 export default function Games() {
   return (
-    <div>Games</div>
+    <div>
+      <p className="headingBox">
+      <h2 className="gamesHeading">games </h2>
+      <h5 className="subtitle">snake or die</h5>
+      <h5 className="subtitleTwo">dont be a sucka freak</h5>
+     
+     
+      </p>
+    
+      <ul>
+        <li>
+        <NavLink className="snakeHeading" to='/snake'>SNAKE</NavLink>
+        </li>
+        <br />
+        <li>
+        <NavLink className="backButton" to='/'>
+      back
+      </NavLink>
+        </li>
+      </ul>
+
+
+   
+
+
+    </div>
   )
 }

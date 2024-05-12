@@ -6,7 +6,6 @@ import Gallery from './pages/Gallery'
 import Zines from './pages/Zines'
 import GiftShop from './pages/GiftShop'
 import Games from './pages/Games'
-import SnakeGame from './pages/SnakeGame'
 import SnakeGameTwo from './pages/SnakeGameTwo'
 
 function App() {

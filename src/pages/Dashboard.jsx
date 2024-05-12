@@ -9,7 +9,7 @@ export default function Dashboard() {
     <div style={{
       height: '90vh',
       width: '95%',
-      border: '2px seagreen dotted',
+      // border: '2px seagreen dotted',
       margin: '2%',
     
     }}> 
@@ -68,7 +68,7 @@ export default function Dashboard() {
             color: 'seagreen'
         }}>Gift Shop</NavLink>
         <NavLink 
-        to='/snake' 
+        to='/games' 
         style={{
             margin: '5%',
             fontFamily: 'monospace',
