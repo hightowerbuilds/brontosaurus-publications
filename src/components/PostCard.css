@@ -1,0 +1,13 @@
+.postCard {
+    border: 2px seagreen dashed;
+    font-family: monospace;
+    font-size: 15px;
+    color: oldlace;
+    padding: 2%;
+    margin: 1%;
+}
+
+.postMessage {
+    display: inline-flex;
+    margin-top: 5px;
+}

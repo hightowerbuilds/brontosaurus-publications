@@ -1,17 +1,11 @@
+import './PostCard.css'
 
 export default function PostCard(props) {
  
 
   return (
     <div>
-        <p style={{
-            border: '2px seagreen dashed',
-            fontFamily: 'monospace',
-            fontSize: 15,
-            color: 'oldlace',
-            padding: '2%',
-            margin: '1%'
-        }}>
+        <p className="postCard">
            NAME: {props.name} 
             <br />
            TIME OF POST: {props.created}
@@ -19,16 +13,8 @@ export default function PostCard(props) {
             <br />
            POST: {props.post}
            <br />
-           <p style={{
-          display: 'inline-flex',
-        marginTop: 5,
-        
-        }}>
-      {props.delete}
+           <p className="postMessage">{props.delete}</p>
         </p>
-       
-        </p>
-     
     </div>
   )
 }
