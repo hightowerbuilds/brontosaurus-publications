@@ -5,41 +5,72 @@
 }
 
 .innerContainer {
-
+    display: inline-flex;
+    width: 100%;
+    border-bottom: 2px seagreen dotted;
+    background-color: #47045844;
+    border-radius: 1%;
 }
 
 .headingP {
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+    font-size: 30px;
+    margin: 10px;
 }
 
 .headingImg {
-
+    border: 1px seagreen solid;
+    border-radius: 2%;
 }
 
 .navP {
-
+    display: inline-flex;
+    width: 100%;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
 }
 
 .galleryNavLink {
-
+    margin: 5%;
+    font-family: "VT323";
+    font-size: 24px;
+    color: seagreen;
+    background-color: transparent;
 }
 
 .zineNavLink {
-
+    margin: 5%;
+    font-family: "VT323";
+    font-size: 24px;
+    color: seagreen;
+    background-color: transparent;
 }
 
 .storeNavLink {
-
+    margin: 5%;
+    font-family: "VT323";
+    font-size: 24px;
+    color: seagreen;
+    background-color: transparent;
 }
 
 .gamesNavLink {
-
+    margin: 5%;
+    font-family: "VT323";
+    font-size: 24px;
+    color: seagreen;
+    background-color: transparent;
 }
 
 .mainSection {
-
+    display: flex;
+    justify-content: center;
 }
 
 .mainImg {
-
+    padding: 10px;
 }
