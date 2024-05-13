@@ -123,8 +123,8 @@ function changeDirection (e) {
         <p className="logoBox">
         <h1 className="name">Snake</h1>
          <div className="scoreBox">
-				<h2>Score: {score}</h2>
-				<h2>High Score: {localStorage.getItem("snakeScore")}</h2>
+				<p>score: {score}</p>
+				<p>high score: {localStorage.getItem("snakeScore")}</p>
 			</div>
         </p>
        

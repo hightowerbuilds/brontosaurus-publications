@@ -72,12 +72,14 @@ h2 {
 .name:hover {
 	background: linear-gradient(45deg, #FFA500, #000000);
 	font-size: 175px;
+	border-bottom: #FFA500 40px dashed;
 }
 
 .scoreBox {
 	margin-left: 30px;
-    font-family: monospace;
+    font-family: "Share Tech Mono", monospace;
 	color: orangered;
+	font-size: 20px;
 	transition: 10000ms ease-in;
 }
 

@@ -80,7 +80,7 @@ function MessageBoard() {
         }} onClick={() => deleteMessage(message.id)}>delete</button>}
       />
       </>
-    ));
+    )); 
   };
 
 
@@ -93,7 +93,7 @@ function MessageBoard() {
      {isLoading && <p style={{fontSize: 56, fontFamily: 'cursive'}}>CURRENTLY LOADING</p>}
      {error && 911}
 
-    <p className='titleP'>MESSAGE BOARD</p>
+    <p className='titleP'>message board</p>
     
       <input
         type="text"
