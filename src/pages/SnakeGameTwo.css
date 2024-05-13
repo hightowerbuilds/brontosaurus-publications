@@ -71,6 +71,7 @@ h2 {
 
 .name:hover {
 	background: linear-gradient(45deg, #FFA500, #000000);
+	font-size: 175px;
 }
 
 .scoreBox {
