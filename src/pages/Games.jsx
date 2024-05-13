@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom"
 import './Games.css'
+import HighScores from "../components/HighScores"
 
 
 
@@ -26,8 +27,8 @@ export default function Games() {
         </li>
       </ul>
 
-
-   
+    
+    <HighScores />
 
 
     </div>

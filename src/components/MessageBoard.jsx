@@ -86,20 +86,23 @@ function MessageBoard() {
 
 
   return (
+
+
     <div className='outerBox'>
+      
      {isLoading && <p style={{fontSize: 56, fontFamily: 'cursive'}}>CURRENTLY LOADING</p>}
      {error && 911}
 
     <p className='titleP'>MESSAGE BOARD</p>
     
-     <input
+      <input
         type="text"
         value={newName}
         onChange={(e) => setNewName(e.target.value)}
         placeholder="Enter your Name"
         className='inputName'/>
 
-    <input
+      <input
         type="text"
         value={newMessage}
         onChange={(e) => setNewMessage(e.target.value)}
