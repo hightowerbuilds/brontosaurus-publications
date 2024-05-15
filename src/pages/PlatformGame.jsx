@@ -9,23 +9,38 @@ const canvasRef = useRef(null);
 useEffect(() => {
     const canvas = canvasRef.current;
     const context = canvas.getContext('2d');
-    const width = 1024;
-    const height = 576;
-
-    let y = 10
-    function animate(){
-        window.requestAnimationFrame(animate)
-        console.log('go')
-        context.fillStyle = 'black';
-        context.fillRect( 0, 0, width, height)
-        context.fillStyle = 'seagreen';
-        context.fillRect(10, y, 10, 10)
-
-        context.fillStyle = 'seagreen';
-        context.fillRect(100, y, 10, 10)
-        y++
+    const width = 1624;
+    const height = 976;
+    let position = {
+      x: 0,
+      y: 1,
     }
 
+    let velocity = {
+      x: 1, 
+      y: 1
+    }
+
+    function draw() {
+      context.fillStyle = 'black';
+      context.fillRect( 0, 0, width, height)
+      context.fillStyle = 'seagreen';
+      context.fillRect(position.x, position.y, 100, 10)
+      position.x += velocity.x
+      velocity.x += 0.1
+      position.y += velocity.y
+      velocity.y += 0.4
+    }
+
+    
+
+
+  
+    function animate(){
+        window.requestAnimationFrame(animate)
+        draw()
+    } 
+    
     animate()
 }, [])
 
