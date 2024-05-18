@@ -40,6 +40,20 @@ useEffect(() => {
         velocity.y = 0;
       }
 
+      velocity.x = 0
+      if(keys.d.pressed) velocity.x = 1
+      else if (keys.a.pressed) velocity.x = -1
+
+      
+    }
+
+    const keys = {
+      d: {
+        pressed: false,
+      },
+      a: {
+        pressed: false,
+      }
     }
      
 
@@ -49,14 +63,35 @@ useEffect(() => {
     } 
     
     animate()
+
+
+    window.addEventListener('keydown', (e) => {
+      switch (e.key) {
+        case 'd':  keys.d.pressed = true
+        break
+        case 'a':  keys.a.pressed = true
+        break
+        case 'w': velocity.y = -15
+      }
+    })
+
+    window.addEventListener('keyup', (event) => {
+      switch (event.key) {
+        case 'd':
+          keys.d.pressed = false
+          break
+        case 'a':
+          keys.a.pressed = false
+          break
+      }
+    })
+
+
+
 }, [])
 
 
-  window.addEventListener('keydown', (e) => {
-    switch (e.key) {
-      case 'd': console.log('deez nutz')
-    }
-  })
+  
 
 
   return (
