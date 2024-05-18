@@ -9,7 +9,7 @@ const canvasRef = useRef(null);
 useEffect(() => {
     const canvas = canvasRef.current;
     const context = canvas.getContext('2d');
-    const width = 1624;
+    const width = 2024;
     const height = 976;
     let position = {
       x: 0,
@@ -17,7 +17,7 @@ useEffect(() => {
     }
 
     let velocity = {
-      x: 1, 
+      x: 0.1, 
       y: 1
     }
 
@@ -51,8 +51,16 @@ useEffect(() => {
     animate()
 }, [])
 
+
+  window.addEventListener('keydown', (e) => {
+    switch (e.key) {
+      case 'd': console.log('deez nutz')
+    }
+  })
+
+
   return (
-    <canvas ref={canvasRef} width={1024} height={576} />
+    <canvas className='layout' ref={canvasRef} width={1324} height={976} />
 
        
     
