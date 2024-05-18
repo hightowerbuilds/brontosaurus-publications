@@ -53,7 +53,7 @@ export default function Zines() {
         Zines 
         <br /> 
         <br />
-        It's not a palace, or riveted barge, infested den, nor raft of Medusa. It's not a thing nor nothing yet it is what it is.  
+        It's not a palace, or riveted barge, infested den, nor raft of Medusa. It's not a thing nor nothing yet it is.  
         <br />    
         <br />
         <NavLink 
