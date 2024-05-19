@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react'
 import './PlatformGame.css'
-
+import gameBackground from '../images/platformer-background.png'
 
 export default function PlatformGame() {
 
@@ -9,7 +9,7 @@ const canvasRef = useRef(null);
 useEffect(() => {
     const canvas = canvasRef.current;
     const context = canvas.getContext('2d');
-    const width = 2024;
+    const width = 1324;
     const height = 976;
     let position = {
       x: 0,
@@ -25,8 +25,12 @@ useEffect(() => {
       height: 100
     }
 
+ 
+
     function draw() {
-      context.fillStyle = 'black';
+      
+      context.fillStyle = 'skyblue';
+      // context.drawImage(gameBackground, 0, 0)
       context.fillRect( 0, 0, width, height)
       context.fillStyle = 'seagreen';
       context.fillRect(position.x, position.y, 100, size.height)
@@ -41,10 +45,10 @@ useEffect(() => {
       }
 
       velocity.x = 0
-      if(keys.d.pressed) velocity.x = 1
-      else if (keys.a.pressed) velocity.x = -1
+      if(keys.d.pressed) velocity.x = 5
+      else if (keys.a.pressed) velocity.x = -5
 
-      
+
     }
 
     const keys = {
@@ -95,8 +99,13 @@ useEffect(() => {
 
 
   return (
-    <canvas className='layout' ref={canvasRef} width={1324} height={976} />
-
+    <>
+       <canvas className='layout' ref={canvasRef} width={1324} height={976}/>
+        <p className='pTag'>a: left, w: jump, d: right</p>
+    </>
+   
+      
+   
        
     
 
