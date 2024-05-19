@@ -9,10 +9,6 @@ const canvasRef = useRef(null);
 useEffect(() => {
     const canvas = canvasRef.current;
     const context = canvas.getContext('2d');
-    const width = 1324;
-    const height = 976;
-    
-
 
     let position = {
       x: 0,
@@ -94,7 +90,7 @@ useEffect(() => {
 
 
 
-}, [ gameBackground ])
+}, [])
 
 
 
