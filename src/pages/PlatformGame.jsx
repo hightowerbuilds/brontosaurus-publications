@@ -11,6 +11,9 @@ useEffect(() => {
     const context = canvas.getContext('2d');
     const width = 1324;
     const height = 976;
+    
+
+
     let position = {
       x: 0,
       y: 1,
@@ -25,13 +28,12 @@ useEffect(() => {
       height: 100
     }
 
- 
-
+     
     function draw() {
       
-      context.fillStyle = 'skyblue';
-      // context.drawImage(gameBackground, 0, 0)
-      context.fillRect( 0, 0, width, height)
+      const image = new Image();
+      image.src = gameBackground;
+      image.onload = () => context.drawImage(image, 0, 0); 
       context.fillStyle = 'seagreen';
       context.fillRect(position.x, position.y, 100, size.height)
 
@@ -92,22 +94,12 @@ useEffect(() => {
 
 
 
-}, [])
+}, [ gameBackground ])
 
-
-  
 
 
   return (
-    <>
+  
        <canvas className='layout' ref={canvasRef} width={1324} height={976}/>
-        <p className='pTag'>a: left, w: jump, d: right</p>
-    </>
-   
-      
-   
-       
-    
-
   )
 }

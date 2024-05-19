@@ -1,27 +1,23 @@
-import { Link } from "react-router-dom"
-import Banner from "../components/Banner"
+
+
+import { useRef, useEffect } from 'react';
+import gameBackground from '../images/platformer-background.png'
 
 
 export default function Landing() {
-  return (
-    <div style={{
-        height: '100vh',
-        width: '100%',
-        display: 'flex',
-        justifyContent: 'center',
-       
-    }}>
-        <Banner />
-        <Link style={{
-          position: 'absolute',
-          top: '80%',
-          fontFamily: 'monospace',
-          fontSize: 20,
-          color: 'seagreen'
-        }} to='/'>
-          Enter
-        </Link>
-    </div>
-   
-  )
+  const canvasRef = useRef(null);
+
+  useEffect(() => {
+    const canvas = canvasRef.current;
+    const context = canvas.getContext('2d');
+
+    const image = new Image();
+    image.src = gameBackground;
+
+    image.onload = () => {
+      context.drawImage(image, 0, 0);
+    };
+  }, [gameBackground]); // Re-execute effect if imageUrl changes
+
+  return <canvas ref={canvasRef} width={1324} height={976} />;
 }
