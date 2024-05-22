@@ -21,7 +21,7 @@ export default function Games() {
         </li>
         <br />
         <li>
-        <NavLink  to='/platform'>platform</NavLink>
+        <NavLink className='platformHeading' to='/platform'>PLATFORM</NavLink>
         </li>
         <br />
         <li>

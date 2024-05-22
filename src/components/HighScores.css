@@ -1,15 +1,20 @@
 .highScoresBox {
-    display: flex;
+
+    position: absolute;
+    left: 50vh;
+    top: 3vh;
     width: 100%;
     height: 50vh;
-    justify-content: center;
-    align-items: flex-end;
+    border-left: 3px oldlace dotted;
+    padding: 2%;
 }
 
 .scoreTitle {
     color: oldlace;
     font-family: 'VT323';
     font-size: 54px;
+    border-bottom: 2px oldlace solid;
+    width: fit-content;
 }
 
 .itLoads {
@@ -19,8 +24,7 @@
 }
 
 .dataBox {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px
+    color: oldlace;
+    font-family: 'VT323';
+    font-size: 54px;
 }

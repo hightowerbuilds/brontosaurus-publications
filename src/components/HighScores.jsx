@@ -48,22 +48,25 @@ export default function HighScores() {
   
   
   return (
-   <>
+   
     <div className='highScoresBox'> 
-        {isLoading ? <p className='itLoads'>it loads for us</p> : <h3 className='scoreTitle'>high scores</h3>  }
+        {isLoading ? <p className='itLoads'>it loads for us</p> : <h3 className='scoreTitle'>HIGH Scores</h3>  }
         {error && <p>{error.message}</p> }
-    </div>
+ 
      
     <div className='dataBox'>
+        <br />
+        <p style={{ border: '2px oldlace solid', width: 'fit-content', fontSize: 92}}>  SNAKE</p>
         {highScores.map((item) => (
-            <div key={item.id}>
-               <p>{item.name}</p> 
-                <p>{item.score}</p>
+            <div style={{  width: 'fit-content'}} key={item.id}>
+               <p>{item.name}: {item.score}</p> 
+                
             </div>
         
         ))}
   
     </div>
-   </>
+    </div>
+   
   )
 }
