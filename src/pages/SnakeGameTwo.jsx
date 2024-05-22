@@ -27,6 +27,7 @@ const [ delay, setDelay] = useState(null);
 const [ gameOver, setGameOver ] = useState(false);
 const [ score, setScore ] = useState(0);
 const [ name, setName ] = useState('')
+const [ entry, setEntry ] = useState('') 
 
 
 useInterval(() => runGame(), delay)
@@ -144,6 +145,14 @@ function changeDirection (e) {
     } 
 }
 
+const handleNameEntry = () => {
+    setEntry( 
+        <button onClick={play} className="playButton">
+                {/*  */}
+            Play
+        </button>   )
+    
+}
 const handleInput = (e) => setName(e.target.value)
 
     return (
@@ -152,9 +161,11 @@ const handleInput = (e) => setName(e.target.value)
         <p className="logoBox">
         <h1 className="name">Snake</h1>
          <div className="scoreBox">
-				<p>score: {score}</p>
+				<p>player: {name}</p>
+                <p>score: {score}</p>
 				<p>high score: {localStorage.getItem("snakeScore")}</p>
 			</div>
+          
         </p>
        
 
@@ -162,20 +173,17 @@ const handleInput = (e) => setName(e.target.value)
         <img id='fruit' src={AppleImg} alt="fruit" width={30}/>
         {/* <img className="monitor" src={Monitor} alt="monitor" width={30} /> */}
         <canvas className="playArea" ref={canvasRef} width={`${canvasX}px`} height={`${canvasY}px`} />
-        <input className="nameInput" type="text" value={name} onChange={handleInput}/>
-        <p className="nameDisplay"> Name: {name}</p>
-        <button onClick={play} className="playButton">
-        {gameOver && <div className="gameOver">
-            <p>
-                try again
-                <br />
-                <br />
-                <NavLink to='/games'>give up? </NavLink>
-            </p>
-         </div>}
-				Play
-		</button>   
-      
+       
+            {!entry ? 
+                    <p className="nameDisplay">
+                        <p className="nameShown"></p>
+                        <input className="nameInput" type="text" value={name} onChange={handleInput}/>
+                        <br />
+                        <br />
+                        <button className="buttonName" onClick={handleNameEntry}>ENTER NAME TO BEGIN</button>
+                    </p> 
+            : entry}
+            {gameOver && <div className="gameOver"> <NavLink to='/games'>give up? </NavLink> </div>}
     </div>
         </>
    

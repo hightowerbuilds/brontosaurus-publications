@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 
-
 .playArea {
 	border: 5px solid seagreen;
     border-radius: 2%;
@@ -20,7 +19,7 @@
 
 .gameOver {
 	position: fixed;
-	top: 43.2%;
+	bottom: 1%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	color: white;
@@ -51,14 +50,16 @@ h2 {
 
 .logoBox {
     height: 30vh;
-    display: flex;
+	position: absolute;
+	left: 35%;
+	top: 5%;
+    display:list;
+	width: max-content;
     justify-content: center;
     align-items: center;
     font-family: 'Press Start 2P';
     transition: 500ms ease-in-out;
     font-size: 26px;
-	
-	
 }
 
 .logoBox:hover {
@@ -90,10 +91,30 @@ h2 {
 	border-radius: 15%;
 }
 
-.nameInput {
-
+.nameDisplay {
+	position: absolute;
+	font-family: 'Press Start 2P';
+	color: seagreen;
+	bottom: 6%;	
+	left: 35%;
 }
 
-.nameDisplay {
 
+
+.nameInput {
+	width: fit-content;
+	font-size: 20px;
+	font-family: 'Press Start 2P';
+	color: seagreen;
+}
+
+.buttonName {
+	border-radius: 2%;
+	height: fit-content;
+	width: fit-content;
+	left: 30%;
+	font-size: 24px;
+	font-family: 'Press Start 2P';
+	background-color: orange;
+	box-shadow: inset;
 }
