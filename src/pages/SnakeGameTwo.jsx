@@ -1,5 +1,7 @@
 import { useInterval } from "../services/useInterval"
 import { useRef, useState } from "react";
+import { supabase } from "../services/supabase";
+
 import AppleImg from '../images/applePixels.png';
 import './SnakeGameTwo.css'
 import { useEffect } from "react";
@@ -24,6 +26,8 @@ const [ direction, setDirection ] = useState([0, -1]);
 const [ delay, setDelay] = useState(null);
 const [ gameOver, setGameOver ] = useState(false);
 const [ score, setScore ] = useState(0);
+const [ name, setName ] = useState('')
+
 
 useInterval(() => runGame(), delay)
 
@@ -44,10 +48,33 @@ useEffect(
     },
     [ snake, apple, gameOver ]
 )
+    const rowData = {
+        name: name,
+        score: score
+    }
+
+    const createScore = async (tableName, data) => {
+        try {
+            const { error } = await supabase
+            .from(tableName)
+            .insert([data]);
+            if (error) throw error;
+            // setIsLoading(false)
+            console.log('success');
+          } catch (error) {
+            // setError('error')
+            console.log('error')
+          }
+        }
+  
+
+
+
 
 function handleSetScore() {
     if (score > Number(localStorage.getItem("snakeScore"))) {
         localStorage.setItem("snakeScore", JSON.stringify(score))
+       
     }
 }
 
@@ -91,6 +118,7 @@ function runGame() {
         setDelay(null)
         setGameOver(true)
         handleSetScore()
+        createScore('high_scores', rowData )
     }
     if (!appleAte(newSnake)) {
         newSnake.pop()
@@ -116,6 +144,7 @@ function changeDirection (e) {
     } 
 }
 
+const handleInput = (e) => setName(e.target.value)
 
     return (
 
@@ -130,11 +159,13 @@ function changeDirection (e) {
        
 
         <div className="background" onKeyDown={(e) => changeDirection(e)}>
-         <img id='fruit' src={AppleImg} alt="fruit" width={30}/>
-         {/* <img className="monitor" src={Monitor} alt="monitor" width={30} /> */}
-         <canvas className="playArea" ref={canvasRef} width={`${canvasX}px`} height={`${canvasY}px`} />
-         <button onClick={play} className="playButton">
-         {gameOver && <div className="gameOver">
+        <img id='fruit' src={AppleImg} alt="fruit" width={30}/>
+        {/* <img className="monitor" src={Monitor} alt="monitor" width={30} /> */}
+        <canvas className="playArea" ref={canvasRef} width={`${canvasX}px`} height={`${canvasY}px`} />
+        <input className="nameInput" type="text" value={name} onChange={handleInput}/>
+        <p className="nameDisplay"> Name: {name}</p>
+        <button onClick={play} className="playButton">
+        {gameOver && <div className="gameOver">
             <p>
                 try again
                 <br />
@@ -144,7 +175,7 @@ function changeDirection (e) {
          </div>}
 				Play
 		</button>   
-       
+      
     </div>
         </>
    
