@@ -3,9 +3,6 @@ import './HighScores.css'
 import { useState, useEffect } from 'react'
 import { supabase } from '../services/supabase'
 
-
-
-
 export default function HighScores() {
 
 
@@ -39,7 +36,7 @@ export default function HighScores() {
   return (
    
     <div className='highScoresBox'> 
-        {isLoading ? <p className='itLoads'>it loads for us</p> : <h3 className='scoreTitle'>HIGH Scores</h3>  }
+        {isLoading ? <p className='itLoads'>it puts the loading on its skin</p> : <h3 className='scoreTitle'>HIGH Scores</h3>  }
         {error && <p>{error.message}</p> }
  
      

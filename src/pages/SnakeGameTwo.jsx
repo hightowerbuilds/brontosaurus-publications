@@ -179,8 +179,8 @@ const handleInput = (e) => setName(e.target.value)
             {!entry ? 
                     <p className="nameDisplay">
                         <p className="nameShown"></p>
-                        <div style={{ padding: 30, border: '2px seagreen dashed'}}>
-                        <input placeholder="CALL IT KOOL AID" className="nameInput" type="text" value={name} onChange={handleInput}/>
+                        <div style={{ padding: 30}}>
+                        <input placeholder="ENTER NAME" className="nameInput" type="text" value={name} onChange={handleInput}/>
                         </div>
                      
                         <br />
@@ -188,7 +188,7 @@ const handleInput = (e) => setName(e.target.value)
                         <div>
                             
                         </div>
-                        <button className="buttonName" onClick={handleNameEntry}>ENTER NAME TO BEGIN</button>
+                        <div className="buttonName" onClick={handleNameEntry}>CLICK TO BEGIN</div>
                     </p> 
             : entry}
             {gameOver && <div className="gameOver"> <NavLink to='/games'>give up? </NavLink> </div>}

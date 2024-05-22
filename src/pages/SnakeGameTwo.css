@@ -105,11 +105,16 @@ h2 {
 	font-size: 20px;
 	font-family: 'Press Start 2P';
 	color: seagreen;
+	transition: 100ms ease-in-out;
+}
+
+.nameInput:hover {
+	font-size: 25px;
+	background-color: #FFA500;
 }
 
 .buttonName {
 	border-radius: 2%;
-	border: 2px red dashed;
 	color: seagreen;
 	padding: 2%;
 	height: fit-content;
@@ -118,6 +123,11 @@ h2 {
 	font-size: 24px;
 	font-family: 'Press Start 2P';
 	box-shadow: inset;
+}
+
+.buttonName:hover {
+	cursor: grab;
+	border-bottom: 12px orange dashed;
 }
 
 .backButton {

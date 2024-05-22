@@ -1,5 +1,7 @@
-.highScoresBox {
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
+
+.highScoresBox {
     position: absolute;
     left: 50vh;
     top: 5vh;
@@ -18,9 +20,11 @@
 }
 
 .itLoads {
-    font-size: 100px;
-    font-family: "Share Tech Mono", monospace;
-    color: #242434;
+    padding: 1%;
+    font-size: 50px;
+    font-family: 'Press Start 2P';
+    color: maroon;
+
 }
 
 .dataBox {
