@@ -179,7 +179,7 @@ const handleInput = (e) => setName(e.target.value)
             {!entry ? 
                     <p className="nameDisplay">
                         <p className="nameShown"></p>
-                        <div style={{ padding: 30}}>
+                        <div style={{ padding: 30, borderBottom: '2px red dashed'}}>
                         <input placeholder="ENTER NAME" className="nameInput" type="text" value={name} onChange={handleInput}/>
                         </div>
                      
