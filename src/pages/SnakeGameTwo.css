@@ -119,3 +119,18 @@ h2 {
 	font-family: 'Press Start 2P';
 	box-shadow: inset;
 }
+
+.backButton {
+	position: fixed;
+	font-size: 32px;
+	font-family: 'Press Start 2P';
+	color: seagreen;
+	width: fit-content;
+	transition: 1000ms ease-in-out;
+}
+
+.backButton:hover {
+	transform: translate(750%, 0%);
+	font-size: xx-small;
+
+}

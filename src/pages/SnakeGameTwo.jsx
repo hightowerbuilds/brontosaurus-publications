@@ -158,7 +158,9 @@ const handleInput = (e) => setName(e.target.value)
     return (
 
         <>
+         <NavLink className='backButton' to='/games'>BBBBBACK</NavLink> 
         <p className="logoBox">
+       
         <h1 className="name">Snake</h1>
          <div className="scoreBox">
 				<p>player: {name}</p>
