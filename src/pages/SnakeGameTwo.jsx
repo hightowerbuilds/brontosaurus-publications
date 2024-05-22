@@ -177,9 +177,15 @@ const handleInput = (e) => setName(e.target.value)
             {!entry ? 
                     <p className="nameDisplay">
                         <p className="nameShown"></p>
-                        <input className="nameInput" type="text" value={name} onChange={handleInput}/>
+                        <div style={{ padding: 30, border: '2px seagreen dashed'}}>
+                        <input placeholder="CALL IT KOOL AID" className="nameInput" type="text" value={name} onChange={handleInput}/>
+                        </div>
+                     
                         <br />
                         <br />
+                        <div>
+                            
+                        </div>
                         <button className="buttonName" onClick={handleNameEntry}>ENTER NAME TO BEGIN</button>
                     </p> 
             : entry}

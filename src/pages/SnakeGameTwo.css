@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 
+
 .playArea {
 	border: 5px solid seagreen;
+	position: absolute;
+	top: 20%;
+	left: 15%;
     border-radius: 2%;
 	width: 585px;
 	height: 440px;
-	position: fixed;
-	top: 50.2%;
-	left: 50%;
-	transform: translate(-50%, -50%);
 }
 
 #fruit {
@@ -19,28 +19,27 @@
 
 .gameOver {
 	position: fixed;
-	bottom: 1%;
-	left: 50%;
+	bottom: 30%;
+	left: 23%;
 	transform: translate(-50%, -50%);
 	color: white;
 	font-size: 70px;
+	font-family: 'Press Start 2P';
 }
 .playButton {
 	position: fixed;
-	top: 80%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+	bottom: 40%;
+	left: 20%;
 	color: white;
-	background: #502c7b;
-	border: 2px solid white;
-	padding: 10px;
-	font-size: 0.9em;
-	color: white;
-	box-shadow: 4px 4px 0px 0px white;
+	font-size: 60px;
 	font-family: 'Press Start 2P', cursive;
-	font-weight: 700;
-	letter-spacing: 5px;
-	text-transform: uppercase;
+	transition: 1000ms ease-in-out;
+}
+
+.playButton:hover {
+	height: 100px;
+	width: 300px;
+	transform: translate(-15%, 0%);
 }
 
 h2 {
@@ -51,7 +50,7 @@ h2 {
 .logoBox {
     height: 30vh;
 	position: absolute;
-	left: 35%;
+	left: 15%;
 	top: 5%;
     display:list;
 	width: max-content;
@@ -74,7 +73,7 @@ h2 {
 
 .name:hover {
 	background: linear-gradient(45deg, #FFA500, #000000);
-	font-size: 175px;
+	font-size: 100px;
 	border-bottom: #FFA500 40px dashed;
 }
 
@@ -95,8 +94,8 @@ h2 {
 	position: absolute;
 	font-family: 'Press Start 2P';
 	color: seagreen;
-	bottom: 6%;	
-	left: 35%;
+	bottom: 30%;	
+	left: 15%;
 }
 
 
@@ -110,11 +109,13 @@ h2 {
 
 .buttonName {
 	border-radius: 2%;
+	border: 2px red dashed;
+	color: seagreen;
+	padding: 2%;
 	height: fit-content;
 	width: fit-content;
 	left: 30%;
 	font-size: 24px;
 	font-family: 'Press Start 2P';
-	background-color: orange;
 	box-shadow: inset;
 }

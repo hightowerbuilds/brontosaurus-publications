@@ -92,10 +92,6 @@ useEffect(() => {
 
 }, [])
 
-
-
-  return (
+  return ( <canvas className='layout' ref={canvasRef} width={1324} height={976}/> )
   
-       <canvas className='layout' ref={canvasRef} width={1324} height={976}/>
-  )
 }
