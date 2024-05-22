@@ -51,7 +51,7 @@ function MessageBoard() {
     await createMessage('message_board', rowData)
     setNewMessage('');
     setNewName('');
-    fetchData()
+    fetchData();
   }
 
   const deleteMessage = async (id) => {

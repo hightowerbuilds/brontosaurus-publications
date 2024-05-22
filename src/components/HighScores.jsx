@@ -35,17 +35,6 @@ export default function HighScores() {
         }
     }
 
-    // const handleData = () => {
-    //     const data = highScores.map((item) => {
-    //         <div key={item.id}>
-    //             {item.name}
-    //             {item.score}
-    //         </div>
-    //     ))
-    //     console.log(data)
-    //     return data
-    // }
-  
   
   return (
    
