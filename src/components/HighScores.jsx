@@ -42,15 +42,20 @@ export default function HighScores() {
      
     <div className='dataBox'>
         <br />
-        <p style={{ border: '2px oldlace solid', width: 'fit-content', fontSize: 92}}>  SNAKE</p>
-        {highScores.map((item) => (
+        <p 
+        style={{ 
+            border: '2px oldlace solid', 
+            width: 'fit-content', 
+            fontSize: 92
+            }}>
+        SNAKE
+        </p>
+
+            {highScores.map((item) => (
             <div style={{  width: 'fit-content'}} key={item.id}>
-               <p>{item.name}: {item.score}</p> 
-                
-            </div>
-        
-        ))}
-  
+            <p>{item.name}: {item.score}</p>   
+            </div>))}
+            
     </div>
     </div>
    

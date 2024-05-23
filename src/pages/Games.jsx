@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom"
 import './Games.css'
 import HighScores from "../components/HighScores"
+import Footer from "../components/Footer"
 
 
 
@@ -25,16 +26,15 @@ export default function Games() {
         </li>
         <br />
         <li>
-        <NavLink className="backButtonGamesPage" to='/'>
-      back
-      </NavLink>
         </li>
       </ul>
 
     
     <HighScores />
-
-
+      <NavLink to='/'>
+      <Footer />
+      </NavLink>
+   
     </div>
   )
 }

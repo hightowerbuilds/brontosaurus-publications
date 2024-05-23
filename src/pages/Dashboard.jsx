@@ -35,7 +35,7 @@ export default function Dashboard() {
        
        
         <MessageBoard />
-        <Footer />
+        {/* <Footer /> */}
 
     </div>
   )

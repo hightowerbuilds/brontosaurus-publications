@@ -1,7 +1,8 @@
 import { NavLink } from "react-router-dom";
-import Logo from '../images/zine_logo.png'
+import Footer from '../components/Footer'
 import './Zines.css'
 
+import Logo from '../images/zine_logo.png'
 import ZineOneCover from '../images/zineOne/CoverOne.jpg'
 import ZineOnePageOne from '../images/zineOne/pageOne.jpg'
 import ZineOnePageTwoThree from '../images/zineOne/pageTwoThree.jpg'
@@ -23,8 +24,6 @@ export default function Zines() {
   return (
 
 <div className="backgroundZinesPage">
-
-<p className="containerZinesPage"> <NavLink className='backButtonZinesPage' to='/'>back</NavLink> </p>
 
 <img src={Logo} className="zinesImage"/>
 
@@ -87,6 +86,9 @@ export default function Zines() {
 <div className='zineOneCoverBox'>
 <img src={ZineOnePageTwentySixTwentySeven} />
 </div>  
+<NavLink to='/'>
+<Footer />
+</NavLink>
 
 </div>    
   )

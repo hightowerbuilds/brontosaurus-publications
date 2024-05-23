@@ -19,11 +19,6 @@
     background: inherit;
 }
 
-.containerZinesPage {
-
-    background: inherit;
-    
-}
 
 .gamesLinkZinesPage {
     font-size: 35px;
@@ -46,7 +41,7 @@
 .zinesImage {
     background: transparent;
     position: fixed;
-    margin-left: 1%;
+    margin: 1%;
     transition: 1000ms;
 }
 

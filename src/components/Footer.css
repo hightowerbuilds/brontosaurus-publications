@@ -1,18 +1,18 @@
 .footer {
+    background: transparent;
     position: fixed;
     display: flex;
-    justify-content: center;
+    justify-content: end;
     top: 95vh;
     height: 5vh;
     width: 94%;
-    border-top: 2px seagreen solid;
     padding: 5px;
     font-family: "VT323", monospace;
-    font-size: 46px;
-    transition: 100ms
+    font-size: 26px;
+    color: orangered;
+    transition: 1000ms ease-in-out;
 }
 
 .footer:hover{
-    font-family: "Jacquard 12 Charted", system-ui;
-    font-size: 56px;
+    font-size: 30px;
 }
