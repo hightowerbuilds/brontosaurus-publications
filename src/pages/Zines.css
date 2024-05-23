@@ -1,5 +1,4 @@
 .backgroundZinesPage {
-    background-image: url('src/images/newspaperBackground.jpg');
     height: 100%;
     width: 100%;
     
@@ -35,12 +34,37 @@
 .zinesListBox {
     margin: 2%;
     border: 2px oldlace solid;
-    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    background: inherit;
     height: 30vh;
-    width: 96%;
+    width: 98%;
 
 }
 
 .zinesImage {
-    background: inherit;
+    background: transparent;
+    position: fixed;
+    margin-left: 1%;
+    transition: 1000ms;
+}
+
+.zinesImage:hover {
+    padding: .5%;
+   background-color: orangered;
+   border-radius: 30%;
+}
+
+.zineOneCoverBox {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+
+}
+
+
+.zineOnePageOneTwo {
+    margin-left: 1%;
+    height: 50vh;
+    width: 98%;
 }
