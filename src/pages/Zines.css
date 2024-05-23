@@ -1,0 +1,46 @@
+.backgroundZinesPage {
+    background-image: url('src/images/newspaperBackground.jpg');
+    height: 100%;
+    width: 100%;
+    
+}
+
+.randomThought {
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    background: inherit;
+}
+
+.backButtonZinesPage {
+    font-size: 35px;
+    font-weight: 700;
+    font-family: 'Courier New', Courier, monospace;
+    background: inherit;
+}
+
+.containerZinesPage {
+
+    background: inherit;
+    
+}
+
+.gamesLinkZinesPage {
+    font-size: 35px;
+    font-weight: 700;
+    font-family: 'Courier New', Courier, monospace;
+    background: inherit;
+}
+
+.zinesListBox {
+    margin: 2%;
+    border: 2px oldlace solid;
+    background-color: antiquewhite;
+    height: 30vh;
+    width: 96%;
+
+}
+
+.zinesImage {
+    background: inherit;
+}

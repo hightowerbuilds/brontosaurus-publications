@@ -125,7 +125,7 @@ h2 {
 
 .buttonName:hover {
 	cursor: grab;
-	/* border-bottom: 12px orange dashed; */
+	border-bottom: 12px orange dashed;
 }
 
 .backButton {
