@@ -14,7 +14,9 @@ import ZineOneCenterPage from '../images/zineOne/centerpage.jpg'
 import ZineOnePageSixteenSeventeen from '../images/zineOne/pageSixteenSeventeen.jpg'
 import ZineOnePageEighteenNineteen from '../images/zineOne/pageEighteenNineteen.jpg'
 import ZineOnePageTwentyTwentyOne from '../images/zineOne/pageTwentyTwentyOne.jpg'
-
+import ZineOnePageTwentyTwoTwentyThree from '../images/zineOne/pageTwentyTwoTwentyThree.jpg'
+import ZineOnePageTwentyFourTwentyFive from '../images/zineOne/pageTwentyFourTwentyFive.jpg'
+import ZineOnePageTwentySixTwentySeven from '../images/zineOne/pageTwentySixTwentySeven.jpg'
 
 export default function Zines() {
 
@@ -82,7 +84,7 @@ export default function Zines() {
 <img src={ZineOnePageTwentyTwentyOne} />
 </div>
 
-{/* <div className='zineOneCoverBox'>
+<div className='zineOneCoverBox'>
 <img src={ZineOnePageTwentyTwoTwentyThree} />
 </div>
 
@@ -92,7 +94,7 @@ export default function Zines() {
 
 <div className='zineOneCoverBox'>
 <img src={ZineOnePageTwentySixTwentySeven} />
-</div>  */}
+</div>  
 
 </div>
 
