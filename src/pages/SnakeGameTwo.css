@@ -125,7 +125,7 @@ h2 {
 
 .buttonName:hover {
 	cursor: grab;
-	border-bottom: 12px orange dashed;
+	/* border-bottom: 12px orange dashed; */
 }
 
 .backButton {
@@ -138,7 +138,7 @@ h2 {
 }
 
 .backButton:hover {
-	transform: translate(750%, 0%);
-	font-size: xx-small;
+	transform: translate(0%, 1000%);
+	/* font-size: xx-small; */
 
 }

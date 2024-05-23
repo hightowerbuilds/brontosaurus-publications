@@ -25,7 +25,7 @@ export default function Games() {
         </li>
         <br />
         <li>
-        <NavLink className="backButton" to='/'>
+        <NavLink className="backButtonGamesPage" to='/'>
       back
       </NavLink>
         </li>

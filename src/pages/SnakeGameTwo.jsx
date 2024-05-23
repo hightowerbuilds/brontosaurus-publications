@@ -158,7 +158,7 @@ const handleInput = (e) => setName(e.target.value)
     return (
 
         <>
-         <NavLink className='backButton' to='/games'>BBBBBACK</NavLink> 
+         <NavLink className='backButton' to='/games'>back</NavLink> 
         <p className="logoBox">
        
         <h1 className="name">Snake</h1>
@@ -179,16 +179,14 @@ const handleInput = (e) => setName(e.target.value)
             {!entry ? 
                     <p className="nameDisplay">
                         <p className="nameShown"></p>
-                        <div style={{ padding: 30, borderBottom: '2px red dashed'}}>
+                        <div style={{ padding: 30}}>
                         <input placeholder="ENTER NAME" className="nameInput" type="text" value={name} onChange={handleInput}/>
                         </div>
-                     
                         <br />
                         <br />
                         <div>
-                            
                         </div>
-                        <div className="buttonName" onClick={handleNameEntry}>CLICK TO BEGIN</div>
+                        <button className="buttonName" onClick={handleNameEntry}>CLICK TO BEGIN</button>
                     </p> 
             : entry}
             {gameOver && <div className="gameOver"> <NavLink to='/games'>give up? </NavLink> </div>}
