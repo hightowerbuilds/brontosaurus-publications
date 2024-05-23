@@ -20,19 +20,11 @@ import ZineOnePageTwentySixTwentySeven from '../images/zineOne/pageTwentySixTwen
 
 export default function Zines() {
 
- 
   return (
 
 <div className="backgroundZinesPage">
 
-   <p className="containerZinesPage">
-   <NavLink className='backButtonZinesPage' to='/'>back</NavLink> 
-
-   <br />
-   <br />
-   </p>
-
-
+<p className="containerZinesPage"> <NavLink className='backButtonZinesPage' to='/'>back</NavLink> </p>
 
 <img src={Logo} className="zinesImage"/>
 
@@ -96,10 +88,6 @@ export default function Zines() {
 <img src={ZineOnePageTwentySixTwentySeven} />
 </div>  
 
-</div>
-
-
-
-    
+</div>    
   )
 }
