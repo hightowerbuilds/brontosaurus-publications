@@ -1,7 +1,6 @@
 import { NavLink } from "react-router-dom"
 import MessageBoard from "../components/MessageBoard"
 import BrontoHeader from '../images/bronto-header.jpg'
-import Footer from "../components/Footer"
 import CityBronto from '../images/cityBronto.jpg'
 import './Dashboard.css'
 
@@ -23,7 +22,7 @@ export default function Dashboard() {
         <p className="navP">
         <NavLink className="galleryNavLink" to='/gallery'>art</NavLink>
         <NavLink className="zineNavLink" to='/zines'> zines </NavLink>
-        <NavLink className="storeNavLink" to='/store'>if shop</NavLink>
+        <NavLink className="storeNavLink" to='/store'>what if shop</NavLink>
         <NavLink className="gamesNavLink" to='/games' >games </NavLink>
         </p>
       </div>   
@@ -35,7 +34,7 @@ export default function Dashboard() {
        
        
         <MessageBoard />
-        {/* <Footer /> */}
+
 
     </div>
   )

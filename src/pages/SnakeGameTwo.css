@@ -20,8 +20,8 @@
 .gameOver {
 	position: fixed;
 	bottom: 30%;
-	left: 23%;
-	transform: translate(-50%, -50%);
+	left: 20%;
+	
 	color: white;
 	font-size: 70px;
 	font-family: 'Press Start 2P';

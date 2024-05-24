@@ -1,17 +1,10 @@
 import { NavLink } from "react-router-dom";
-
+import Footer from '../components/Footer'
 
 export default function GiftShop() {
   return (
     <>
-    <NavLink 
-      to='/'
-      style={{
-       fontFamily: 'monospace',
-       fontSize: 18,
-       color: 'seagreen'
-      }}
-      >back</NavLink>
+ 
       <div
       style={{
         height: '100vh',
@@ -22,6 +15,10 @@ export default function GiftShop() {
         fontFamily: 'monospace'
       }}
     > "Where are all the gifts?" They cried.</div>
+    <NavLink to='/'>
+    <Footer />
+    </NavLink>
+   
     </>
   
   )
