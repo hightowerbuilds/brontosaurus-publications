@@ -21,11 +21,18 @@ import ZineOnePageTwentySixTwentySeven from '../images/zineOne/pageTwentySixTwen
 
 export default function Zines() {
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth' // Smooth scrolling
+    });
+  };
+
   return (
 
 <div className="backgroundZinesPage">
 
-<img src={Logo} className="zinesImage"/>
+<img onClick={scrollToTop} src={Logo} className="zinesImage" />
 
 <div className='zineOneCoverBox'>
 <img src={ZineOneCover} />

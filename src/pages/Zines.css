@@ -42,7 +42,8 @@
     background: transparent;
     position: fixed;
     margin: 1%;
-    transition: 1000ms;
+    transition: 500ms;
+    cursor: pointer;
 }
 
 .zinesImage:hover {
