@@ -20,10 +20,10 @@ export default function Dashboard() {
         </p>  
 
         <p className="navP">
-        <NavLink className="galleryNavLink" to='/gallery'>art</NavLink>
-        <NavLink className="zineNavLink" to='/zines'> zines </NavLink>
+        <NavLink className="galleryNavLink" to='/articles'>articles</NavLink>
+        <NavLink className="zineNavLink" to='/zines'> zines</NavLink>
         <NavLink className="storeNavLink" to='/store'>what if shop</NavLink>
-        <NavLink className="gamesNavLink" to='/games' >games </NavLink>
+        <NavLink className="gamesNavLink" to='/games' >games</NavLink>
         </p>
       </div>   
 
