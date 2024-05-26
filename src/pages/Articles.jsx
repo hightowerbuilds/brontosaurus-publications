@@ -15,7 +15,7 @@ export default function Articles() {
                 </p>
             </div>
             <div className='articleContainer'>
-                   <h2 className='articleTitle'>articles title</h2>
+                   <h2 className='articleTitle'>article title</h2>
                    <p className='articleContent'>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia earum perferendis illo vitae sunt? Temporibus, vel qui saepe nemo maxime quidem? Doloribus iure consectetur error pariatur, fugit quisquam reiciendis perferendis.
                    </p>
