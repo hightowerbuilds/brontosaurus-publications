@@ -1,0 +1,23 @@
+.articlesHeading {
+    font-family: monospace;
+    font-size: 36px;
+    color: oldlace;
+    border-bottom: 3px oldlace solid;
+}
+
+.articleContainer {
+    width: 77%;
+    height: fit-content;
+    background-color: oldlace;
+    position: absolute;
+    left: 19%;
+    top: 10%;
+}
+
+
+
+.sidebarContainer {
+    height: 95vh;
+    width: 15%;
+    background-color: seagreen;
+}

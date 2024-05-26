@@ -7,7 +7,18 @@ export default function Articles() {
   return (
     <div>
 
-        <h2>articles</h2>
+        <h2 className='articlesHeading'>articles</h2>
+        <div className='pageConatiner'>
+            <div className='sidebarContainer'>
+                sidebar
+            </div>
+            <div className='articleContainer'>
+                    thoughts and ideas
+            </div>
+        </div>
+        
+
+
 
         <NavLink to='/'>
         <Footer />
