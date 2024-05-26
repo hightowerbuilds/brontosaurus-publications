@@ -19,8 +19,8 @@
 
 .gameOver {
 	position: fixed;
-	bottom: 30%;
-	left: 20%;
+	bottom: 10%;
+	left: 40%;
 	
 	color: white;
 	font-size: 70px;
@@ -28,7 +28,7 @@
 }
 .playButton {
 	position: fixed;
-	bottom: 40%;
+	bottom: 10%;
 	left: 20%;
 	color: white;
 	font-size: 60px;
