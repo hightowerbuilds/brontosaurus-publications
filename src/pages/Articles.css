@@ -1,8 +1,17 @@
+* {
+    background-color: oldlace;
+}
+
 .articlesHeading {
-    font-family: monospace;
+    font-family: 'Courier New', Courier, monospace;
     font-size: 36px;
-    color: oldlace;
-    border-bottom: 3px oldlace solid;
+    border-bottom: 3px bisque solid;
+}
+
+.pageContainer {
+    background-color:inherit;
+    width: 100%;
+    height: 80vh;
 }
 
 .articleContainer {
@@ -14,10 +23,29 @@
     top: 10%;
 }
 
+.articleTitle {
+    font-family: monospace;
+    background-color: inherit;
+}
 
+.articleContent {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-stretch: semi-expanded;
+    background-color: inherit;
+    padding: 1%;
+}
 
 .sidebarContainer {
     height: 95vh;
-    width: 15%;
-    background-color: seagreen;
+    width: 18%;
+    background-color: oldlace;
+    border-right: 3px bisque dashed;
+}
+
+.sidebarContent {
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+
+    background-color: inherit;
+    padding: 2%;
 }
