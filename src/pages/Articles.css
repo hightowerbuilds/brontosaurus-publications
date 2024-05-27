@@ -9,6 +9,11 @@
     font-size: 36px;
     border-bottom: 3px bisque solid;
     background: transparent;
+    transition: 1000ms ease-in-out;
+}
+
+.articlesHeading:hover {
+    color: maroon;
 }
 
 .pageContainer {
@@ -27,9 +32,10 @@
 }
 
 .articleTitle {
-    font-family: monospace;
+    font-family: 'Courier New';
     background-color: inherit;
 }
+
 
 .articleContent {
     font-family:Georgia, 'Times New Roman', Times, serif;
@@ -40,14 +46,16 @@
 
 .sidebarContainer {
     height: 95vh;
-    width: 18%;
+    width: 15%;
     background: transparent;
     border-right: 3px bisque dashed;
+    display: flex;
+    justify-content: center;
 }
 
 .sidebarContent {
     font-size: 20px;
     font-family: 'Courier New', Courier, monospace;
     background-color: inherit;
-    padding: 2%;
+    padding: 3%;
 }
