@@ -5,10 +5,10 @@ import './Articles.css'
 
 export default function Articles() {
   return (
-    <div style={{backgroundColor: 'oldlace'}}>
+    <div className='mainBoxArticles'>
 
         <h2 className='articlesHeading'>articles</h2>
-        <div className='pageConatiner'>
+        <div className='pageContainer'>
             <div className='sidebarContainer'>
                 <p className='sidebarContent'>
                     sidebar content
@@ -22,9 +22,6 @@ export default function Articles() {
             </div>
         </div>
         
-
-
-
         <NavLink to='/'>
         <Footer />
         </NavLink>
