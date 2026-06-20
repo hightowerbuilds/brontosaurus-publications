@@ -1,3 +1,11 @@
+<p align="center">
+  <img
+    src="https://gbnizxzurmbzeelacztr.supabase.co/storage/v1/object/public/images/brontosaurus-publications/bronto-header.png"
+    alt="Brontosaurus Publications"
+    width="600"
+  />
+</p>
+
 # Brontosaurus Publications
 
 The Brontosaurus Publications website — an indie publishing/zine hub built with
