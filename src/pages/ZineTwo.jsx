@@ -1,16 +1,16 @@
 import { A } from '@solidjs/router'
 import { For } from 'solid-js'
 import Footer from '../components/Footer'
+import { CLOUD } from '../cloud'
 import './Zines.css'
 
-import Logo from '../assets/zine_logo.png'
-import ZineTwoCover from '../assets/ZineTwoCover.jpg'
+const Logo = `${CLOUD}/zine_logo.png`
 
-// Only the cover scan exists so far. Add interior page imports here as they
+// Only the cover scan exists so far. Add more filenames here as interior pages
 // become available and they'll render automatically.
 const zineTwoPages = [
-  ZineTwoCover,
-]
+  'ZineTwoCover.jpg',
+].map((name) => `${CLOUD}/zine-two/${name}`)
 
 export default function ZineTwo() {
   const scrollToTop = () => {

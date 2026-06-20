@@ -4,7 +4,7 @@ import Footer from '../components/Footer'
 import { CLOUD } from '../cloud'
 import './Zines.css'
 
-import Logo from '../assets/zine_logo.png'
+const Logo = `${CLOUD}/zine_logo.png`
 
 const zineOnePages = [
   'CoverOne.jpg',
