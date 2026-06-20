@@ -1,0 +1,21 @@
+.footer {
+  background: transparent;
+  position: fixed;
+  display: flex;
+  justify-content: flex-start;
+  top: 0;
+  left: 0;
+  height: 5vh;
+  width: fit-content;
+  padding: 5px;
+  font-family: "VT323", monospace;
+  font-size: 26px;
+  color: orangered;
+  transition: 1000ms ease-in-out;
+  z-index: 2;
+}
+
+.footer:hover {
+  font-size: 30px;
+  color: orange;
+}
